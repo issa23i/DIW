@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidad -->
+    <meta name="description" content=""> <!-- descripción , útil para el SEO-->
+    <meta http-equiv="X-UA-Compatible" content="IE=7"> <!-- compatibilidad -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibilidad -->
+    <meta name="keywords" content=""> <!-- palabras clave, útil para el SEO -->
+    <!--<meta http-equiv="refresh" content="0; url=http://example.com">  que se refresque cada n segundos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pantalla completa -->
+    <meta http-equiv=”expires” content=”Sat, 31 Dec 2020 23:59:00 GMT”> <!-- Indica que la web expirará (deja de ser válida en la caché) 
+                                                                            en la fecha GMT dada. Si se pone 0, el navegador tendrá que 
+                                                                            regcargarla cada vez que se visite.-->
+    <meta http-equiv="Cache-Control" content="no-store" /> <!-- No guarda la web en la caché del navegador. 
+                                                                Esto hará que siempre se recargue de nuevo desde el servidor.-->
+    <meta name="author" content="Nombre del autor"> <!-- Nombre del autor -->
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola, Mundo</h1>    
+    <ol type="I">
+        <li>Manolo</li>
+        <li>Luis</li>
+        <li>Victor</li>
+    </ol>
+    <!-- Listas de descripciones -->
+    <dl>
+        <dt>aaa
+            <dd>uno</dd>
+            <dd>dos</dd>
+            <dd>res</dd>
+            <dd>cuu</dd>
+        </dt>
+        <dt>bbb
+            <dd>ci</dd>
+            <dd></dd>
+            <dd></dd>
+            <dd></dd>
+        </dt>
+        <dt>
+            <dd></dd>
+            <dd></dd>
+            <dd></dd>
+            <dd></dd>
+        </dt>
+    </dl>
+
+    <table>
+        <caption>Aquí en caption aparece la discripcion de la tabla</caption>
+        <colgroup>
+            <col span="3" style="background-color: grey">
+            
+            <col style="background-color: yellow">
+            <col style="background-color: green">
+        </colgroup>
+        <tr>
+            <td class="miclase">1</td>
+            <td class="miclase">2</td>
+            <td class="miclase">3</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="miclase">7</td>
+            <td class="miclase"></td>
+            <td class="miclase"></td>
+        </tr>
+        <tr>
+            <td class="miclase">11</td>
+            <td rowspan="2" class="miclase">22</td>
+            <td class="miclase">33</td>
+        </tr>
+        <tr>
+            <td class="miclase">22</td>
+            <td class="miclase">2</td>
+            <td class="miclase">2</td>
+        </tr>
+        <tr>
+            <td class="miclase">55</td>
+            <td class="miclase">3e2</td>
+            <td class="miclase">23</td>
+        </tr>
+    </table>
+    <h1>Hola, Mundo</h1>   
+    <p><cite> Párrafo como cita con un salto de línea <br/> en este punto </cite> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, molestiae minus? Fugit, beatae. Officiis odit quos eaque modi, placeat est error quasi dolore mollitia molestias in magnam maiores eos tenetur!</p>
+    <figure>
+        <img src="data:image/jpeg;base64,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" alt="Esto es una foto">
+        <figcaption>Texto que aparece debajo de la imagen</figcaption>
+    </figure>
+    <a href="https://www.lipsum.com/" target="_blank" rel="noopener noreferrer">Lorem Ipsum Web</a>
 </body>
 </html>
