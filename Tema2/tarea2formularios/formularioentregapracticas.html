@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de entrega de prácticas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--Ejercicio 2.- Crear un formulario para entrega de prácticas en una asignatura:
+        - Investiga cómo se puede comprobar el tipo de fichero-->
+    <form action="" method="get">
+        <fieldset>
+            <legend>Entrega de prácticas</legend>
+            <label for="nombrearchivo">Nombre del archivo</label>
+            <input type="text" name="nombrearchivo" id="nombrearchivo">
+            <label for="nombrealumno">Nombre del alumno</label>
+            <input type="text" name="nombrealumno" id="alum">
+            <label for="archivo">Entrega</label>
+            <input type="file" name="archivo" id="archivo" size="1800">
+            <label for="comentarios">Comentarios</label>
+            <input type="text" name="comentarios" id="comentarios">
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
