@@ -1,0 +1,16 @@
+fieldset{
+    padding:1.5em;
+    background-color: gainsboro;
+}
+button{
+    padding: 0.5em 1em;
+    border-radius: 16%;
+    margin: 1.5em;
+    background-color: gainsboro;
+}
+input{
+    margin: 1em;
+}
+legend{
+    background-color: azure;
+}

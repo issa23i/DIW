@@ -1,0 +1,47 @@
+h1{
+    color: blueviolet;
+}
+
+
+
+address, blockquote, dir, div, dl, fieldset, form, menu, p, pre,
+table, ul, ol{
+    /*elementos en bloque*/
+}
+a, abbr, b, bdo, big, br, cite, code, dfn, em, font, i, img,
+input, kbd, label, q, s, samp, select, small, span, strike, strong, sub, sup, textarea, tt, u ,var{
+    /* elementos en líena*/
+}
+
+
+
+
+/*** selectores ***/
+.titulos{
+    color: yellow;
+}
+h1.titulos{ /** los h1  que sean de la clase titulos **/
+    color:coral;
+}
+#titulo1{
+    color: aqua;
+}
+*{
+    /*todo*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p>h1{
+    /* todos los h1 hijos directos de p */
+}
+
+p+h1{
+    /* todos los h1 que estén inmediatamente posteriores de un p */
+}
+
+p h1{
+    /* todos los h1 que estén dentro de p sean directamente hijos o no */
+}
+
+p~h1{
+    /* igual que el anterior pero justo antes. */
+}

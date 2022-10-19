@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario registro cliente</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--Ejercicio 1.- Crear un formulario para registrar un nuevo cliente en un sitio web, solicitando datos
+    personales necesarios, así como la creación de una clave de acceso (password).-->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="apellido1">Apellido 1</label>
+            <input type="text" name="apellido1" id="apellido1">
+            <label for="apellido2">Apellido 2</label>
+            <input type="text" name="apellido2" id="apellido2">
+            <label for="sexo">Género</label>
+            <input type="radio" name="sexo" id="sexohombre" value="Hombre">Hombre</input>
+            <input type="radio" name="sexo" id="sexomujer" value="Mujer">Mujer</input>
+            <input type="radio" name="sexo" id="sexonobinario" value="No binario">No binario</input>
+        </fieldset>
+        <fieldset>
+            <legend>Intereses</legend>
+            <label for="int">Áreas</label>
+            <input type="checkbox" name="int" id="">Deportes</input>
+            <input type="checkbox" name="int" id="">Política</input>
+            <input type="checkbox" name="int" id="">Cultura</input>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+            <label for="tel">Teléfono</label>
+            <input type="tel" name="tel" id="tel">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Acceso</legend>
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass">
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
