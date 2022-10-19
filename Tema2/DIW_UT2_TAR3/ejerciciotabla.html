@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con estilos - Tarea 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td colspan="3" class="bkg-blue">
+                <img src="img/120_ipod.png" width="50px" alt="ipod">
+            </td>
+            <td colspan="2" class="bkg-blue">
+                <img src="img/100_ipod.png" width="50px" alt="ipod">
+            </td>
+        </tr>
+        <tr>
+            <td class="bkg-red padd-tp-bm">Capacidad</td>
+            <td class="grey-big">2 GB</td>
+            <td class="grey-big">4 GB</td>
+            <td class="grey-big">8 GB</td>
+            <td class="grey-big">32 GB</td>
+            <td class="grey-big">2 GB</td>
+        </tr>
+        <tr>
+            <td class="bkg-red">Colores</td>
+            <td class="bld">Blanco</td>
+            <td>
+                <ul type="disc" class="f-red">
+                    <li>Negro</li>
+                    <li>Rosa</li>
+                    <li>Dorado</li>
+                </ul>
+            </td>
+            <td class="bld">Negro</td>
+            <td colspan="2" class="bkg-blue">
+                <ul type="disc" class="f-red" id="padd-lf-rgt">
+                    <li>Negro</li>
+                    <li>Blanco</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="bkg-red">Pantalla</td>
+            <td colspan="3" class="bkg-blue bld">3 pulgadas</td>
+            <td colspan="2" class="bkg-blue bld">7 pulgadas</td>
+        </tr>
+        <tr >
+            <td class="bkg-red padd-tp-bm" rowspan="2">Tiempo de Carga</td>
+            <td rowspan="2" colspan="3" class="bkg-blue bld">1 hora</td>
+            <td colspan="2" class="padd-tp-bm bld" id="bkg-ylw">5 horas</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bkg-blue bld">30 minutos</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/** bordes **/
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    border: 1px solid black;
+}
+
+/** fondos **/
+
+.bkg-red{
+    background-color: #ff0000;
+    color: white;
+}
+.bkg-blue{
+    background-color: blue;
+}
+#bkg-ylw{
+    background-color: yellow;
+}
+.grey-big{
+    background-color: grey;
+    font-size: xx-large;
+}
+
+/** espacios **/
+
+.padd-tp-bm{
+    padding: 2em 0em;
+}
+#padd-lf-rgt{
+    padding: 0em 4em;
+}
+
+/** fuentes **/
+
+.bld{
+    font-weight: bolder;
+}
+.f-red{
+    color: brown;
+}
+
+/** imágenes **/
+
+img{
+    height: 50px;
+}
