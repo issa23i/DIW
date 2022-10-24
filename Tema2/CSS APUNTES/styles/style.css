@@ -22,6 +22,7 @@ input, kbd, label, q, s, samp, select, small, span, strike, strong, sub, sup, te
 }
 h1.titulos{ /** los h1  que sean de la clase titulos **/
     color:coral;
+    background-color: blueviolet;
 }
 #titulo1{
     color: aqua;
@@ -32,10 +33,12 @@ h1.titulos{ /** los h1  que sean de la clase titulos **/
 }
 p>h1{
     /* todos los h1 hijos directos de p */
+    /* para "escapar" de este estilo podemos usar la etiqueta span, para que no sea hijo direcot */
 }
 
 p+h1{
     /* todos los h1 que estén inmediatamente posteriores de un p */
+    background-color: aqua;
 }
 
 p h1{
@@ -44,10 +47,13 @@ p h1{
 
 p~h1{
     /* igual que el anterior pero justo antes. */
+    background-color: green;
 }
 [coldspan="2"],[coldspan="3"]{
     /* por las propiedades de la etiqueta */
 }
+img[alt="nombreimagen"]{
 
+}
 /** ------------------ PSEUDO SELECTORES ------------------------ **/
 

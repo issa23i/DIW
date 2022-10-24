@@ -1,0 +1,30 @@
+body{
+    background-color: grey;
+}
+div{
+    margin: 2em;
+    border-top: 1em solid green;
+    border-bottom: 1em dashed yellow;
+    padding: 1em;
+}
+#first>img{
+    width: 50%;
+}
+#first{
+    width: 50%;
+    background-color: brown;
+}
+#second{
+    width: 25%;
+    background-color: blue;
+}
+#second img{
+    width: 100%;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+#subrayado {
+    text-decoration: underline;
+}
