@@ -39,9 +39,15 @@ p+h1{
 }
 
 p h1{
-    /* todos los h1 que estén dentro de p sean directamente hijos o no */
+    /* todos los h1 que estén dentro de p sean directamente hijos o no (osea que estén dentro de p)*/
 }
 
 p~h1{
     /* igual que el anterior pero justo antes. */
 }
+[coldspan="2"],[coldspan="3"]{
+    /* por las propiedades de la etiqueta */
+}
+
+/** ------------------ PSEUDO SELECTORES ------------------------ **/
+
