@@ -1,0 +1,46 @@
+
+/* PSEUDO SELECTORES */
+a:link{
+    color: darkorchid;
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+a:visited{
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+li:first-child{
+    color: green;
+}
+
+ul:nth-of-type(2n) li:last-child{
+    background-color: blue;
+    color: aliceblue;
+}
+ul:nth-of-type(2n+1) li:last-child{
+    background-color: rgb(176, 18, 107);
+    color: aliceblue;
+}
+
+/* PSEUDO ELEMENTOS */
+
+p::first-letter{
+    font-size: 2em;
+    color: red
+}
+
+p::first-line{
+    font-size: 1.7em;
+    color: blue;
+}
+p::after{
+    content: "FIN";
+    color:  rgb(176, 18, 107) ;
+    border: rgb(176, 18, 107) solid 6px;
+    font-size: 3em;
+}

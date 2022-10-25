@@ -24,6 +24,8 @@ div{
 p{
     text-align: center;
     font-weight: bold;
+    text-indent: 22%;
+    margin: 0% 10%;
 }
 #subrayado {
     text-decoration: underline;
