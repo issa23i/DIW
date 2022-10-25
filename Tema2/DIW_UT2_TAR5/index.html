@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <a href="https://www.eldiario.es">HORARIO DE CLASE CURSO 2018-2019</a>
+    <table>
+        <thead>
+            <tr>
+                <td>HORAS</td>
+                <td>Lunes</td>
+                <td>Marte</td>
+                <td>Miércoles</td>
+                <td>Jueves</td>
+                <td>viernes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td rowspan="2">Matemáticas</td>  
+                <td>Lengua</td> 
+                <td>Inglés</td>
+                <td colspan="2">Ciencias</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Inglés</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+                <td>11:30</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Inglés</td>
+        </tbody>
+    </table>
+    <form action="POST">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <p>
+            <input type="button" value="Enviar Horario" >
+        </p>
+    </form>
+
+</body>
+</html>
