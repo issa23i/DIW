@@ -1,0 +1,52 @@
+html{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div.inline p{
+    display: inline;
+    border: 1px red solid;
+    /** aquí ignora width y height **/
+    width: 200px;
+    height: 150px;
+}
+div.inline_block p{
+    display: inline-block;
+    border: 1px green solid;
+    width: 200px;
+    height: 150px;
+}
+/**
+visivility:hidden desaparece y deja el hueco en la página
+display: none desaparece y no deja huecp
+*/
+.table {
+    display: table;
+}
+.row {
+    display:table-row
+}
+.cell{
+    display: table-cell;
+    border: 1px solid orange;
+}
+span#mg{
+    background-color: rgb(218, 32, 150);
+    margin: 20px;
+    padding: 10px;
+}
+#yellow{
+    background-color: rgb(188, 188, 108);
+}
+
+.fluid{
+    margin: 20px auto; /* el auto hace que se centre*/
+    width: 80%;
+    background-color: blueviolet;
+    padding: 20px;
+}
+article{
+    background-color: cadetblue;
+    float: left;
+    width: 30%;
+}
+/** los breakpoints más comunes 320 480 760 960 1200 1600 px */
