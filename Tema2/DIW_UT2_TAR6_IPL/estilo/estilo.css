@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: gray;
+    color: aliceblue;
+    padding: 2em;
+    top: 0%;
+    position: sticky;
+}
+header nav div{
+    display: inline-block;
+    margin-right: 10%;
+}
+aside{
+    border: 1px solid black;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-right: 2%;
+    top: 35%;
+    position: fixed;
+    width: 11%;
+}
+aside img,nav {
+    width: 96%;
+    margin: 5px auto;
+}
+section, header{
+    width: 70%;
+    margin: 0px auto;
+}
+section{
+    background-color: aquamarine;
+    height: 1000px;
+    
+}
+figure{
+    text-align: center;
+}
