@@ -1,12 +1,17 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(225, 225, 225);
+}
 header{
-    background-color: gray;
-    color: aliceblue;
+    background-color: rgb(77, 76, 76);
+    color: white;
+    font-weight: bolder;
     padding: 2em;
     top: 0%;
     position: sticky;
+    z-index: 5;
 }
 header nav div{
     display: inline-block;
@@ -19,21 +24,65 @@ aside{
     margin-right: 2%;
     top: 35%;
     position: fixed;
-    width: 11%;
+    width: 5%;
+    min-width: 6em;
+    padding: 10px;
+}
+main{
+    width: 85%;
 }
 aside img,nav {
     width: 96%;
-    margin: 5px auto;
+}
+aside nav{
+    padding-top: 25%;
+    padding-bottom: 75%;
+    text-align: center;
 }
 section, header{
     width: 70%;
     margin: 0px auto;
 }
 section{
-    background-color: aquamarine;
+    background-color: rgb(127, 255, 138);
     height: 1000px;
-    
+    position: relative;
 }
 figure{
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.5em 1em;
     text-align: center;
+}
+figure img,figcaption{
+    width: 96%;
+}
+section figure{
+    position: absolute;
+}
+figure:nth-child(1){
+    z-index: 4;
+    left: 18%;
+    top: 18%;
+    transform: rotate(-20deg);
+}
+figure:nth-child(2){
+    z-index: 3;
+    left: 27%;
+    top: 19%;
+    transform: rotate(20deg);
+}
+figure:nth-child(3){
+    z-index: 2;
+    left: 36%;
+    top: 20%;
+    transform: rotate(-15deg);
+}
+figure:nth-child(4){
+    z-index: 1;
+    left: 45%;
+    top: 21%;
+    transform: rotate(15deg);
 }
