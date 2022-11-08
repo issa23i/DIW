@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    /**
+    flex-wrap: wrap-reverse; 
+    flex-wrap: wrap;
+    */
+    flex-direction: row;
+    /**
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-flow: column wrap-reverse;
+    */
+    /** HORIZONTALMENTE
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around; // divide por n elementos y hace margin auto
+    justify-content: center;
+    justify-content: space-evenly; // cada n espacio
+    */
+    /** VERTICALMENTE
+    align-items: center;
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items: stretch; // crecen en altura a la altura del contenedor
+    align-items: baseline; // alineados al texto de dentro
+    */
+    /** VERTICALMENTE Y AFECTA
+    * CUANDO HAY UN SALTO DE LÍNEA (WRAP)
+    align-content: center;
+    align-content:flex-start;
+    align-content: flex-end;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: stretch;
+    **/
+    width: 150px;
+    background-color: orange;
+}
+.container div{
+    background-color: brown;
+    padding: 5px;
+}
+.container div:nth-child(2){
+    /** PROPIEDADES A LOS HIJOS DE UN CONTENEDOR FLEX
+    order: 1;
+    flex-grow: 2; // crece 2 veces más que el resto del espacio restante
+    flex-shrink: 2; // lo mismo que flex-grow pero decrece des espacio faltante
+    flex-basis: 10%; // el espacio que ocupa
+    */
+    /** LO MISMO QUE CON ALIG-CONTENT CAMBIA LA ALINEACIÓN VERTICAL
+    align-self: auto;
+    align-self: baseline;
+    align-self: center;
+    align-self: flex-end;
+    align-self: start;
+    align-self: stretch;
+    */
+}
