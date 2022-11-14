@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
 }
+
+/** CENTRAR */
 body{
     width: 90%;
     margin: 20px auto;
@@ -20,18 +22,26 @@ nav{
 }
 main{
     grid-area: main;
+    width: 90%;
+    justify-self: center;
 }
-article:first-child {
+.container article:nth-child(4){
     grid-area: article1;
 }
-article:nth-child(2) {
+.container article:nth-child(5) {
     grid-area: article2;
+    width: 90%;
+    justify-self: end;
 }
-article:nth-child(3){
+.container article:nth-child(6){
     grid-area: article3;
+    width: 90%;
+    justify-self: end;
 }
-article:last-child{
+.container article:nth-child(7){
     grid-area: article4;
+    width: 90%;
+    justify-self: end;
 }
 footer{
     grid-area: footer;
