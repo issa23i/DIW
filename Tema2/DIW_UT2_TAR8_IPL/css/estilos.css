@@ -1,19 +1,58 @@
 /** NORMALIZAR */
 *{
     box-sizing: border-box;
-    font-family: 'Lobster';
     color:rgb(65, 64, 64) ;
+    margin: 0;
+    padding: 0;
 }
 body{
     width: 90%;
     margin: 20px auto;
-    padding: 0;
+    font-family: 'Lobster';
 }
-/**
+
+/** AREAS ***/
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+article:first-child {
+    grid-area: article1;
+}
+article:nth-child(2) {
+    grid-area: article2;
+}
+article:nth-child(3){
+    grid-area: article3;
+}
+article:last-child{
+    grid-area: article4;
+}
+footer{
+    grid-area: footer;
+}
 .container{
-    margin: 5% auto;
+    display: grid;
+    column-gap: 5px;
+    row-gap: 15px;
+    grid-template-columns: 10% 25% 25% 25%;
+    grid-template-rows: 100px 500px 400px 150px;
+    grid-template-areas: "header header   header   header"
+                         "nav    main     main     article1"
+                         "nav    article2 article3 article4"
+                         "footer footer   footer   footer";
 }
-*/
+
+/** NAV */
+nav div{
+    margin-bottom: 2em;
+}
+
 /** BORDES */
 main, article{
     border: 1px solid rgb(65, 64, 64);
@@ -22,20 +61,7 @@ main, article{
 img{
     border-radius: 12px;
 }
-/** PROPIEDADES FLEX PARA LOS CONTENEDORES DE LOS ARTÍCULOS */
-.content_wrapper{
-    display: inline-flex;
-    flex-wrap: wrap; 
-    justify-content:space-between;
-    flex-direction: row;
-}
-.articles{
-    display: inline-flex;
-    flex-wrap: nowrap; 
-    justify-content:end;
-    flex-direction: row;
-    margin: 1em 0em 1em
-}
+
 /** TAMAÑO DE LAS IMÁGENES */
 main img{
     width: 70%;
@@ -45,23 +71,10 @@ article img{
     width: 90%;
     margin: 1em auto;
 }
-/** ARTÍCULOS CON TEXTO CENTRADO Y ANCHO MÁXIMO */
-article{
-    text-align: center;
-    max-width: 30%;
-    margin-left: 1em;
+article, main{
+    text-align:center;
 }
-.content_wrapper article{
-    max-width: 34%;
-}
-main{
-    text-align: center;
-    max-width: 50%;
-}
-/** EL ARTÍCULO DE MAIN CRECE EL DOBLE */
-main{
-    flex-grow: 2
-}
+
 /** TÍTULOS CENTRADOS, MARGEN Y COLOR DEL BORDE INFERIOR*/
 header{
     text-align: center;
@@ -73,10 +86,5 @@ footer{
     padding-top: 1em;
     margin-top: 1em;
     display: flex;
-    justify-content: space-around;
-}
-nav{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
+    justify-content: space-between;
 }
