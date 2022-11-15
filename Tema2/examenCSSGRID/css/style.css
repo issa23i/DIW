@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Zen Kurenaido;
+}
+body>div{
+    font-weight: bold;
+    border-radius: 16px;
+    /** TAMAÑO */
+    height: 50px;
+    width: 500px;
+    margin: 100px auto;
+}
+#verde{
+    background-color: green;
+    color: white;
+    /** GRID */
+    display: grid;
+    align-content: center;
+    justify-content:baseline;
+    grid-template-columns: 90% 10%;
+}
+#rojo{
+    background-color: red;
+    /** FLEX */
+    display: inline-flex;
+    justify-content: baseline;
+    align-content: center;
+}
+p{
+    margin: auto;
+}
+a{
+    width: 100%;
+}
+img{
+    width: 50%;
+}
+#rojo div{
+    width: 10%;
+}
+#rojo img{
+    margin:10px auto
+}
