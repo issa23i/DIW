@@ -1,0 +1,155 @@
+
+/** COMÚN */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-family: 'Lato';
+    text-align: center;
+}
+button{
+    border: 2px solid rgb(75, 173, 248);
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    margin: 2em 1em;
+}
+button:hover{
+    background-color: rgb(75, 173, 248);
+}
+h3,h2{
+    font-size:200%;
+    margin: 1em;
+}
+h4{
+    font-size:125%;
+    margin: 1em;
+}
+/* SECCIONES 2ª Y 4ª */
+section:nth-of-type(2), section:nth-of-type(4){
+    background-color: #dee1e7;
+    padding: 4em;
+}
+section:nth-of-type(2) p, section:nth-of-type(4) p{
+    color: #c3c6cb;
+    font-size: 125%;
+    font-weight: bold;
+}
+/* SECCION PRINCIPAL TITULO */
+h1{
+    font-size: 600%;
+    font-weight: bolder;
+    border-bottom: 3px solid rgb(75, 173, 248);
+    margin: 1em 0.2em 0.5em;
+}
+section:first-of-type{
+    background-image: url(../img/portada.png);
+    background-size: cover;
+    color: white;
+    padding-bottom: 4em;
+}
+section nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 2em;
+    margin-right: 10%;
+}
+nav div a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+section nav div{
+    margin-right: 3em;
+}
+section:first-of-type>div{
+    width: 70%;
+    margin: 2em auto;
+    padding: 2em auto 3em;
+    font-size: 150%;
+}
+
+/* SECCION FONDO GRIS SIMPLE Y PURO */
+section:nth-of-type(2)>p{
+    width: 70%;
+    margin: 0.5em auto;
+    color: #555656;
+}
+/* SECCION 3 TARJETAS */
+section:nth-of-type(3){
+    width: 70%;
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3em;
+}
+section:nth-of-type(3) p{
+    color: rgb(46, 46, 47);
+}
+article{
+    margin: 0em 2em;
+}
+/* SECCION 6 TARJETAS CON IMÁGENES PRINCIPAL TITULO */
+section:nth-of-type(4)>div{
+    width: 70%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section:nth-of-type(4)>div img{
+    width: 28%;
+    margin-bottom: 2em;
+    border-radius: 22px;
+}
+section:nth-of-type(4) p{
+    font-size: 125%;
+    margin-bottom: 3em;
+}
+/** SECCION FORMULARIO FOOTER  */ 
+footer{
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    padding: 4em;
+    color: #8f9195;
+}
+footer h2{
+    color: white;
+    font-size: 300%;
+}
+footer form{
+    width: 70%;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    margin-top: 2em;
+    font-size: large;
+}
+form button{
+    margin-left: 80%;
+}
+input, textarea{
+    color: white;
+    margin: 1em 0em;
+    padding: 1em;
+    background-color: transparent;
+    border: 2px solid #8f9195;
+    border-radius: 6px;
+}
+footer p{
+    font-size: larger;
+}
