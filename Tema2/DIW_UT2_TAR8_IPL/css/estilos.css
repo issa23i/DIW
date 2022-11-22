@@ -59,6 +59,7 @@ footer{
                          "nav    main     main     article1"
                          "nav    article2 article3 article4"
                          "footer footer   footer   footer";
+    justify-content: center;
 }
 
 /** NAV */
