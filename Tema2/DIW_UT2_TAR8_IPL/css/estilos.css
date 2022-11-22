@@ -25,6 +25,9 @@ main{
     width: 90%;
     justify-self: center;
 }
+main p{
+    padding: 0em 1em;
+}
 .container article:nth-child(4){
     grid-area: article1;
 }
