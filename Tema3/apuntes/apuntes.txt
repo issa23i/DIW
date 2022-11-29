@@ -1,0 +1,56 @@
+<576px (pantallas pequeñas)
+576px-768px (móviles apaisados)
+768px-992ñx (tablets)
+992px-1200px (desktop)
+>1200px (pantallas grandes)
+
+max-width y min-width admite porcentajes,
+pero nunca pasarán de esa medida
+
+MEDIA QUERYS
+- sintaxis -
+@media mediatype [condiciones]{
+    ... estilos ...
+}
+
+tipos mediatype : 
+all, 
+screen, 
+print (para impresoras),
+speech (para sintetizadores de voz, accesibilidad) 
+...
+
+condiciones:
+width , min-width, max-width, ...
+height, min-height, max-height, ..
+device-width, min-device-width...
+orientatios (landscape /portrait)
+astect-ratio, min-aspect-ratio, max-aspect-ratio..
+    4/3, 1/1, 16/9, 3/2.. (16/9 sería 9/16=5.625 => mt 56.25%)
+    Example 16:9 Aspect Ratio
+    .container {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+    Example 4:3 Aspect Ratio
+    .container {
+    padding-top: 75%; /* 4:3 Aspect Ratio (divide 3 by 4 = 0.75) */
+    }
+color, min-color, max-color..
+resolution, scan, grid, 
+
+@media screen and (min-width: 576px) and (orientation: landscape){
+    body{
+        ... estilos
+    }
+}
+
+para hacer la condición en el enlace al css, 
+ya no será necesario poner mediaquerys dentro,
+ya todo el estilo en esa hoja será para pantallas max 576px
+<link rel="stylesheet" media"(max-width: 576px)" href="small.css" />
+
+grid-template:
+"1 2" row ancho
+"1 2" row ancho
+"3 3" row ancho /
+columna1alto columna2alto

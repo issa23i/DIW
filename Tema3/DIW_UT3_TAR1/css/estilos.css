@@ -1,0 +1,55 @@
+header{
+    background-color: green;
+    grid-area: header;
+}
+nav{
+    background-color: yellow;
+    grid-area: nav
+}
+div#uno{
+    background-color: aquamarine;
+    grid-area: div1
+}
+div#dos{
+    background-color: aquamarine;
+    grid-area: div2
+}
+div#tres{
+    background-color: aquamarine;
+    grid-area: div3
+}
+footer{
+    background-color: green;
+    grid-area: footer
+}
+
+body{
+    grid-template: 
+        "header" 100px
+        "nav"    50px
+        "div1"   400px
+        "div2"   200px
+        "div3"   300px
+        "footer" 100px /
+        auto
+}
+#menu_lista, header h2{
+    display: none;
+}
+@media  (min-width:576px) {
+    body{
+        grid-template:
+            "heder header"
+            "nav div1"
+            ".   div1"
+            ".   div2"
+            ".   div3"
+            "footer footer"
+    }
+    #menu_lista, header h2{
+        display: block;
+    }
+    #menu_select{
+        display: none;
+    }
+}
