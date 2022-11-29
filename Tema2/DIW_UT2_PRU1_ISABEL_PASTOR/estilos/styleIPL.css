@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** GENERAL ******************************/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(191, 192, 196);
+}
+h2,h3,p{
+    margin: 1em;
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+}
+article{
+    background-color: white;
+    border-radius: 23px;
+    width: 100%;
+}
+img{
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    max-height: 30%;
+    max-width: 100%;
+}
+p{
+    color:gray;
+}
+a{
+    text-decoration: none;
+}
+
+/** PRIMER ARTICULO DIFERENTE **************/
+[alt="imagen 0"]{
+    max-height: 60%;
+}
+
+/** GRID *********************************/
+main{
+    width: 80%;
+    margin: 2em auto;
+    display: grid;
+    grid-template-areas: "uno uno dos tres"
+                        "cuatro cinco seis siete";
+    row-gap: 2em;
+    column-gap: 2em;
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+/** AREAS **********************************/
+a:nth-of-type(1){
+    grid-area: uno;
+}
+a:nth-of-type(2){
+    grid-area: dos;
+}
+a:nth-of-type(3){
+    grid-area: tres;
+}
+a:nth-of-type(4){
+    grid-area: cuatro;
+}
+a:nth-of-type(5){
+    grid-area: cinco;
+}
+a:nth-of-type(6){
+    grid-area: seis;
+}
+a:nth-of-type(7){
+    grid-area: siete;
+}
+
+/** FLEX ***********************************/
+article{
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    justify-content: stretch
+}
+
+/** PARRAFO A LA DERECHA *****************/
+article>p:last-child{
+    align-self: flex-end;
+}
+
+/** EFECTOS *******************************/
+a:hover{
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.377);
+    border-radius: 23px;
+}
+
+/** DESAPARECER MÁRGENES AL MINIMIZAR ******/
+@media screen and (max-width: 990px)  {
+    main{
+        width: 95%;
+    }
+}
