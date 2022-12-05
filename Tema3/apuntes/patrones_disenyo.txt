@@ -1,0 +1,50 @@
+comun drop
+
+una fila en desktop se convierte a columna en móviles
+
+mostly fluid
+
+una fila en desktop se convierte a dos columnas o más (contenido entral) en otros dispositivos y una columna en móviles
+
+layout shifter
+
+cambia radicalmente el contenido de un dispositivo a otro
+
+off canvas
+
+ocultar elementos
+
+tiny tweaks (pequeñas detalles)
+
+tamaño fuentes, imágenes... 
+
+IMAGENES
+
+<img  src=imgaen.jpg" srcset="big.jpg 2x, small.jpg 1x" retina display 2x, normales 1 x
+<picture                                                       srcset 1000px
+                                                        srcset 100vp
+
+diseño art-director
+
+div
+    picture
+        source media=(min-width=576px) srcset=imagen.jpg
+        sorce media=(min-width=880px) serset=imagen2.jpg    (pantalass grands)
+        img src=imagen                                      (por defecto)
+    </picture
+</div
+
+TABLAS RESPONSIVE
+
+esconfer columnas (display:none)
+filas a columnas (td,tr,tbody,thead:display:block)
+scroll controlado (css atributo overflow-x:auto)
+
+TEXTO RESPONSIVO
+
+VW VIEWPORT width
+VH VIEWPORT height
+VMIN , VMAX EL VALOR MAX MIN EN RELACI´`ON A LA DIMENSIÓN DEL VIEWPORT
+
+
+
