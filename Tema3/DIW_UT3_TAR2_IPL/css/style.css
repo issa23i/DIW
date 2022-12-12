@@ -5,7 +5,22 @@
     font-family: 'Righteous';
 }
 h1,h2,h3,h4,p{
-    padding: 1vw;
+    padding: 0.3em;
+}
+h1{
+    font-size: 4.5vw;
+}
+h2{
+    font-size: 4vw;
+}
+h3{
+    font-size: 3.5vw;
+}
+h4{
+    font-size: 3vw;
+}
+p{
+    font-size: 2.5vw;
 }
 .container{
     width: 90vw;
