@@ -3,4 +3,9 @@
     padding: 0px;
     margin: 0px;
 }
-
+.verde{
+    color: green;
+}
+.hidden {
+    display: none;
+}
