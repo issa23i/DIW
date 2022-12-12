@@ -2,10 +2,68 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'Righteous';
+}
+h1,h2,h3,p{
+    margin: 1em;
+}
+.container{
+    width: 100vw;
+}
+main{
+    width: 100%;
 }
 .verde{
     color: green;
 }
 .hidden {
     display: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_text{
+    background-color: rgb(100, 99, 99);
+    color: white;
+}
+nav{
+    align-self:center;
+}
+.images{
+    width: 100%;
+    display: grid;
+    grid-template: 
+    "uno   dos  tres  cuatro" 50%
+    "cinco seis siete ocho" 50% /
+    25% 25% 25% 25%
+    ;
+}
+picture, img{
+    max-width: 100%;
+}
+picture:nth-last-of-type(1){
+    grid-area: uno;
+}
+picture:nth-last-of-type(2){
+    grid-area: dos;
+}
+picture:nth-last-of-type(3){
+    grid-area: tres;
+}
+picture:nth-last-of-type(4){
+    grid-area: cuatro;
+}
+picture:nth-last-of-type(5){
+    grid-area: cinco;
+}
+picture:nth-last-of-type(6){
+    grid-area: seis;
+}
+picture:nth-last-of-type(7){
+    grid-area: siete;
+}
+picture:nth-last-of-type(8){
+    grid-area: ocho;
 }
