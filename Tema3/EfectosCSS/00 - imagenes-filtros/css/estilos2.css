@@ -1,0 +1,7 @@
+.contenidoFondo {
+	height: 500px;
+    margin:0 auto;
+    background: url(../img/fondo3.gif) bottom right no-repeat, 
+				url(../img/fondo2.gif) center center no-repeat, 
+				url(../img/fondo1.jpg) repeat;
+   } 

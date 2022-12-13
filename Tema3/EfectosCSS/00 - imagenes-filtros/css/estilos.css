@@ -1,0 +1,19 @@
+.contenidoFondo {
+	height: 500px;
+    margin:0 auto;
+    background: url("../img/img1.jpg");
+	background-size: 100% 100%;
+    
+    filter: blur(10px);
+	
+  /*filter:sepia();
+    filter: blur(10px);
+	filter: brightness(50%);
+	filter: contrast(40%); 
+	filter: drop-shadow(8px 8px 10px red); 
+	filter: grayscale(%);
+	filter: hue-rotate(180deg);
+	filter:	invert(%); 
+	filter: opacity(%); 
+	filter: saturate(%);*/ 
+  } 
