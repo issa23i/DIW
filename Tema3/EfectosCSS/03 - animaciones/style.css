@@ -22,7 +22,7 @@ h1 {
 
 #pulse:hover {
   animation-name: pulse;
-  animation-duration: 1s;
+  animation-duration: 6s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   /* animation: pulse 1s linear infinite;*/
@@ -35,7 +35,7 @@ h1 {
   height: 50px;
   width: 50px;
   position: fixed;
-  animation: corre 3s ease-in-out alternate 3;
+  animation: corre 3s ease-in-out alternate 5;
   /* animation-name: corre;
      animation-duration: 3s;
      animation-timing-function: ease-in-out;
@@ -47,7 +47,7 @@ h1 {
   0% {
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color: pink;
     margin: 100px auto;
   }
   25% {

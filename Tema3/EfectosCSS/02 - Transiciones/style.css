@@ -11,6 +11,7 @@ h1 {
   transition-duration: 3s;
   transition-timing-function: ease-in;
   transition-property: color, background-color;
+  
 }
 
 h1:hover {
