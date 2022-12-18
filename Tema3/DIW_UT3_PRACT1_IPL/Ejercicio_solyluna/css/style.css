@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#cielo {
+  /** tamaño y posicion contenedor */
+  width: 30vw;
+  height: 40vh;
+  margin: 20vh auto;
+  background: rgb(2,0,36);
+  background: linear-gradient(188deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  transition: background 10s linear;
+
+/** color del cielo */
+    animation: amanecer 10s ease-in-out alternate infinite;
+    }
+
+@keyframes amanecer {
+    0% {background: rgb(169,240,255);
+        background: linear-gradient(0deg, rgba(169,240,255,1) 0%,  rgba(72,147,247,1) 54%, rgba(36,107,199,1) 100%);}
+    10% {background: rgb(169,240,255);
+        background: linear-gradient(0deg, rgba(169,240,255,1) 0%, rgba(126,179,242,1) 29%, rgba(72,147,247,1) 57%, rgba(36,107,199,1) 100%);}
+    20% {background: rgb(169,240,255);
+        background: linear-gradient(0deg, rgba(169,240,255,1) 0%, rgba(126,179,242,1) 25%, rgba(72,147,247,1) 51%, rgba(36,107,199,1) 76%, rgba(2,45,96,1) 100%);}
+    30% {background: rgb(169,240,255);
+        background: linear-gradient(0deg, rgba(169,240,255,1) 0%, rgba(126,179,242,1) 22%, rgba(72,147,247,1) 39%, rgba(36,107,199,1) 70%, rgba(2,45,96,1) 100%);}
+    40% {background: rgb(169,240,255);
+        background: linear-gradient(0deg, rgba(169,240,255,1) 0%, rgba(126,179,242,1) 12%, rgba(72,147,247,1) 33%, rgba(36,107,199,1) 63%, rgba(2,45,96,1) 100%);}
+    50% {background: rgb(126,179,242);
+        background: linear-gradient(0deg, rgba(126,179,242,1) 13%, rgba(72,147,247,1) 29%, rgba(36,107,199,1) 55%, rgba(2,45,96,1) 100%);}
+    60% {background: rgb(126,179,242);
+        background: linear-gradient(0deg, rgba(126,179,242,1) 0%, rgba(72,147,247,1) 19%, rgba(36,107,199,1) 42%, rgba(2,45,96,1) 100%);}
+    70% {background: rgb(72,147,247);
+        background: linear-gradient(0deg, rgba(72,147,247,1) 0%, rgba(36,107,199,1) 36%, rgba(2,45,96,1) 100%);}
+    80% {background: rgb(36,107,199);
+        background: linear-gradient(0deg, rgba(36,107,199,1) 10%, rgba(2,45,96,1) 100%);}
+    90% {background: rgb(36,107,199);
+        background: linear-gradient(0deg, rgba(36,107,199,1) 0%, rgba(2,45,96,1) 67%);}
+    100% {background: rgb(36,107,199);
+        background: linear-gradient(0deg, rgba(36,107,199,1) 0%, rgba(2,45,96,1) 21%);}
+}
+
+#montanya{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#sol, #luna{
+    z-index:0;
+    position: absolute;
+}
+
+#sol{
+    animation: sol 20s ease-in-out infinite;
+}
+@keyframes sol {
+    0% {    top: 28vh;
+            left: 46vw;
+            opacity: 100%;
+    }
+    25% {top: 32vh;
+        left: 52vw;
+    opacity: 92%;}
+    50% {top: 58vh;
+        left: 62vw;
+    opacity: 0%;}
+    75% {top: 58vh;
+        left: 32vw;
+    opacity: 0%;}
+    100%{
+        top: 28vh;
+        left: 46vw;
+    opacity: 92%;}
+}
+#luna{
+    animation: luna 20s ease-in-out infinite;
+}
+@keyframes luna {
+    0% {top: 58vh;
+        left: 62vw;
+        opacity: 0%;}
+    25% {top: 58vh;
+        left: 32vw;
+        opacity: 0%;}
+    50% {
+        top: 28vh;
+        left: 46vw;
+        opacity: 100%;}
+    75% {top: 32vh;
+        left: 52vw;
+    opacity: 100%;}
+    100%{top: 58vh;
+        left: 62vw;
+    opacity: 0%;}
+}

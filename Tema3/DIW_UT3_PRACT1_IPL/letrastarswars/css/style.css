@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: yellow;
+    background-color: black;
+    width: 90vw;
+}
+#container{
+    width: 70%;
+    transform: perspective(200px)rotateX(20deg);
+    animation: starswars 42s linear infinite;
+    margin: 10px auto;
+}
+h1,p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    padding-bottom: 1em;
+}
+@keyframes starswars{
+    0% {
+        transform: perspective(200px)rotateX(22deg) translateY(450px);
+        opacity: 100%;
+    }
+    100%{transform: perspective(200px)rotateX(22deg) translateY(-800px);
+        opacity: 0%;
+    }
+}

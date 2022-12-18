@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+#container{
+    margin: 42vh 36vw;
+    text-align: center;
+}
+form:hover, input:hover{
+    width: 18em;
+}
+form{
+    width: 6em;
+    border: 2px solid #69a7ee;
+    display: inline-flex;
+    padding: 1em;
+    border-radius: 22px;
+}
+input{
+    width: 2em;
+}
