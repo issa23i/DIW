@@ -1,0 +1,42 @@
+
+#container>div{
+    height: 50px;
+    width: 100px;
+}
+#num1{
+    grid-area: num1;
+    background-color: yellow;
+}
+#num2{
+    grid-area: num2;
+    background-color: red;
+}
+#num3{
+    grid-area: num3;
+    background-color: red;
+}
+#num4{
+    grid-area: num4;
+    background-color: yellow;
+}
+#container{
+    width: 200px;
+    margin: 10vh auto;
+    display: grid;
+    grid-template: 
+    "num1 num2" minmax(50px, auto)
+    "num3 num4" minmax(50px, auto)
+    / 1fr 1fr
+    ;
+}
+
+@media screen and (max-width: 576px) {
+    #container{
+        grid-template: 
+        "num2"
+        "num1"
+        "num3"
+        "num4"
+        ;
+    }
+}

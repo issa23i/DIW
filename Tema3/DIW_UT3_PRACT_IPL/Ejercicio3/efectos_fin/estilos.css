@@ -1,0 +1,17 @@
+.zoom{
+    width: 50%;
+}
+.zoom:hover{
+    animation-duration: 4s;
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}
