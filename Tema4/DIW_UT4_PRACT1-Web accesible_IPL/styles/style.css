@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+picture, iframe, source, img{
+    grid-area: imagen;
+    max-height: 15em;
+}
+h3{
+    grid-area: titulo3;
+}
+p{
+    grid-area: texto;
+}
+button{
+    grid-area: boton;
+}
+article{
+    width: 96vw;
+    margin: 1em auto;
+    display: grid;
+    grid-template: "imagen titulo3" 2em
+    "imagen     texto" 7em
+    "imagen     texto" 7em
+    " boton   .   " 2em/
+              46vw 50vw
+}

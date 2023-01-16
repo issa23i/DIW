@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Isabel Pastor" />
+    <meta
+      name="description"
+      content="Práctica para aprender sobre accesibilidad en las páginas web"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>DIW_UT4_PRACT1 - Web accesible</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 tabindex="1">PÁGINA PRÁCTICA 1 ACCESIBILIDAD</h1>
+      <nav role="menu">
+        <ul role="list">
+          <li tabindex="2" role="menuitem">
+            <a href="#section1">Sección 1</a>
+          </li>
+          <li tabindex="3" role="menuitem"><a href="">Página de Terry</a></li>
+          <li tabindex="4" role="menuitem">
+            <a href="https://universidadagricola.com/">Universidad Agrícola</a>
+          </li>
+          <li tabindex="5" role="menuitem">
+            <a href="https://universidadagricola.com/category/videos/5minutos/"
+              >Vídeos</a
+            >
+          </li>
+          <li tabindex="6" role="menuitem">
+            <a
+              href="https://universidadagricola.com/category/videos/cursosv/#google_vignette"
+              >Cursos</a
+            >
+          </li>
+        </ul>
+        <form role="searchbox">
+          <input
+            type="search"
+            name="q"
+            placeholder="Buscar"
+            tabindex="7"
+            role="search"
+          />
+          <input type="submit" value="Buscar" tabindex="8" role="search" />
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section id="section1">
+        <h2>Cursos en 5 minutos</h2>
+
+        <article role="article">
+          <picture tabindex="9" role="img">
+            <source media="(min-width: 992px)" srcset="img/img1.jpg" />
+            <!-- Más de 576 px -->
+            <source media="(max-width: 992px)" srcset="img/img1_2.jpg" />
+            <!-- Hasta 576 px -->
+            <img
+              src="img/img1.jpg"
+              alt="Recreación de un virus"
+            /><!-- En caso de no soportar picture -->
+          </picture>
+          <h3 tabindex="10">¿Qué es un virus?</h3>
+          <p tabindex="11">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+            ipsam unde architecto optio minus alias, qui, consequatur
+            consequuntur velit odit fugiat, rerum assumenda earum harum
+            temporibus suscipit veniam ratione debitis?
+            Officia laboriosam culpa expedita amet praesentium et impedit beatae
+            minima, hic ea ratione, accusamus veniam doloremque neque magni
+            pariatur dolores commodi natus.
+          </p>
+          <button tabindex="13" type="button">Leer más...</button>
+        </article>
+
+        <article role="article">
+          <picture tabindex="14" role="img">
+            <source media="(min-width: 576px)" srcset="img/img2.jpg" />
+            <!-- Más de 576 px -->
+            <source media="(max-width: 576px)" srcset="img/img2_2.jpg" />
+            <!-- Hasta 576 px -->
+            <img
+              src="img/img2.jpg"
+              alt="Recreación de un virus"
+            /><!-- En caso de no soportar picture -->
+          </picture>
+          <h3 tabindex="15">En agricultura, ¿qué es un híbrido?</h3>
+          <p tabindex="16">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+            ipsam unde architecto optio minus alias, qui, consequatur
+            consequuntur velit odit fugiat, rerum assumenda earum harum
+            temporibus suscipit veniam ratione debitis?
+            Officia laboriosam culpa expedita amet praesentium et impedit beatae
+            minima, hic ea ratione, accusamus veniam doloremque neque magni
+            pariatur dolores commodi natus.
+          </p>
+          <button tabindex="18" type="button">Leer más...</button>
+        </article>
+
+        <article role="article">
+          <iframe src="https://www.youtube.com/embed/73VpnlgUqIg" tabindex="19" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          <h3 tabindex="20">En agricultura, ¿qué es un híbrido?</h3>
+          <p tabindex="21">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+            ipsam unde architecto optio minus alias, qui, consequatur
+            consequuntur velit odit fugiat, rerum assumenda earum harum
+            temporibus suscipit veniam ratione debitis?
+
+            Officia laboriosam culpa expedita amet praesentium et impedit beatae
+            minima, hic ea ratione, accusamus veniam doloremque neque magni
+            pariatur dolores commodi natus.
+          </p>
+          <button tabindex="23" type="button" role="link"><a href="https://universidadagricola.com/como-hacer-cruzamientos-en-ajonjoli-video/"> Leer más...</a></button>
+        </article>
+      </section>
+    </main>
+    <aside>
+      <h2>Newsletter</h2>
+      <form action="" role="form">
+        <input type="text" name="nombre" placeholder="nombre" required role="textbox" id="name" tabindex="24">
+        <input type="text" name="apellido" placeholder="apellido" required role="textbox" id="apellido" tabindex="25">
+        <input type="email" name="email" id="email" placeholder="email" required role="textbox" tabindex="26">
+        <label for="terminos">Acepto los términos</label>
+        <input type="checkbox" name="terminos" id="terminos" required role="checkbox" tabindex="27">
+        <input type="submit" value="Enviar" role="button" tabindex="28">
+      </form>
+    </aside>
+    <footer><p>Ejercicio 1 Tema 4 accesibilidad </p> <p>Isabel Pastor López</p> </footer>
+  </body>
+</html>
