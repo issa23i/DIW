@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+
+    <!-- para el menu desplegable de movil -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="contenido">
+        <header>
+            <h1>EL REINADO VEGETAL</h1>
+            
+            <nav>
+                <div class="icon"><i class="fa fa-bars"></i></div>
+                <div role="listitem" class="menu_item" tabindex="0"> <a href="inicio.html">INICIO</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"><a href="index.html">PÁGINA 2</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"><a href="https://www.significados.com/gimnospermas/#:~:text=Se%20denomina%20como%20gimnospermas%20a,pero%20que%20no%20tienen%20flores." target="_blank" >PÁGINA 3</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"> <a href="https://stri.si.edu/es/noticia/briofitas#:~:text=Briofitas%20es%20el%20nombre%20informal,(e.g.%2C%20sus%20hojas)." target="_blank" >PÁGINA 4</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"><a href="https://www.ecologiaverde.com/plantas-pteridofitas-que-son-tipos-y-ejemplos-1953.html" target="_blank" >PÁGINA 5</a></div>
+            </nav>
+
+            <div class="menu">
+                <div role="listitem" class="menu_item" tabindex="0"> <a href="inicio.html">INICIO</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"><a href="index.html">PÁGINA 2</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"><a href="https://www.significados.com/gimnospermas/#:~:text=Se%20denomina%20como%20gimnospermas%20a,pero%20que%20no%20tienen%20flores." target="_blank" >PÁGINA 3</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"> <a href="https://stri.si.edu/es/noticia/briofitas#:~:text=Briofitas%20es%20el%20nombre%20informal,(e.g.%2C%20sus%20hojas)." target="_blank" >PÁGINA 4</a></div>
+                <div role="listitem" class="menu_item" tabindex="0"><a href="https://www.ecologiaverde.com/plantas-pteridofitas-que-son-tipos-y-ejemplos-1953.html" target="_blank" >PÁGINA 5</a></div>
+            </div>
+        </header>
+
+        <main>
+
+            <article tabindex="0">
+                <img src="img/flores.jpg" alt="flores" />
+                <h3>Angiospermas</h3>
+                <p>Flores</p>
+            </article>
+
+            <article tabindex="0">
+                <img src="img/conos.jpg" alt="Gimnospermas" />
+                <h3>Gimnospermas</h3>
+                <p>Conos</p>
+            </article>
+
+            <article tabindex="0">
+                <img src="img/briofitas.jpg" alt="briofitas" />
+                <h3>Briofitas</h3>
+                <p>musgos, hepáticas, antoceros</p>
+            </article>
+
+            <article tabindex="0">
+                <img src="img/Pteridofitas.jpg" alt="Pteridofitas" />
+                <h3>Pteridofitas</h3>
+                <p>helechos, colas de caballo y musgos</p>
+            </article>
+
+            <article tabindex="0">
+                <img src="img/legumbres.jpg" alt="Pteridofita" />
+                <h3>Las legumbres</h3>
+                <p>frijoles, guisantes y lentejas</p>
+            </article>
+        </main>
+
+
+
+        <footer>
+            <section>
+                <h2>Contacta con nosotros</h2>
+                
+                <p>
+                    <input type="text" name="nombre" required tabindex="0" placeholder="Nombre" />
+                </p>
+
+                <p>
+                    <input type="email" name="email" required tabindex="0" placeholder="Correo" />
+                </p>
+
+                <p>
+                    <textarea cols="30" rows="10" tabindex="0">
+                        Mensajes
+                    </textarea>
+                </p>
+                <p><button type="submit">Contactar</button></p>
+            </section>
+
+            <section>
+                <!-- video -->
+                <video controls>
+                    <source src="video/reino-vegetal.mp4" type="video/mp4" />
+                    <track src="video/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+                    Tu navegador no soporta esta etiqueta (video)
+                </video>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        $(function () {
+            //Captura del evento para mostrar u ocultar
+            $(".icon").click(function () {
+                $(".menu_item").toggle();
+            });
+            $(window).resize(function () {
+                var anchura = $(this).width();
+                if (anchura > 576) {
+                    $(".menu_item").show();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
