@@ -1,0 +1,38 @@
+// Variables
+$grey: #bbbbbb;
+$red: #f00;
+$header-background: $grey;
+$link-normal: #000;
+$link-hover: $red;
+$link-visited: rgb(12, 12, 143);
+$link-active: rgb(141, 245,141);
+
+
+.header{
+    background-color: $header-background;
+}
+
+// Anidamiento básico para enlaces
+a {
+    color: $link-normal;
+    text-decoration: none;
+    &:hover{
+        color: $link-hover;
+    }
+    &:visited{
+        color: $link-visited;
+    }
+    &:active{
+        color: $link-active;
+    }
+}
+
+// Interpolacion en selectores
+$button-type: "error";
+$btn-color: #f00;
+
+.btn-#{$button-type}{
+    background-color: $btn-color;
+}
+
+
