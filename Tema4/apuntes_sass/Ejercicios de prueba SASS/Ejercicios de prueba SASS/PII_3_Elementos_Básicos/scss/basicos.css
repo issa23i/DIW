@@ -20,7 +20,10 @@ a:active {
   background-color: #f00;
 }
 
-header {
-  background-color: wheat;
-  color: blueviolet;
-}/*# sourceMappingURL=sass.css.map */
+.container {
+  background-image: url("images/fondos/default.png");
+}
+
+/* 
+    Web desarrollada por OpenWebinars
+*//*# sourceMappingURL=basicos.css.map */

@@ -34,5 +34,27 @@ $btn-color: #f00;
 .btn-#{$button-type}{
     background-color: $btn-color;
 }
+$light-theme: false;
+$dark-theme: false;
+// estructuras de control
+// @if @else
+header{
+    @if $light-theme == true {
+        background-color: white;
+        color: #000;
+    } @else if $dark-theme {  
+        background-color: #000;
+        color: white;
+    } @else {
+        background-color: wheat;
+        color: blueviolet;
+    }
+}
 
+// while
+@while condition {
+    
+}
+
+// @for
 
