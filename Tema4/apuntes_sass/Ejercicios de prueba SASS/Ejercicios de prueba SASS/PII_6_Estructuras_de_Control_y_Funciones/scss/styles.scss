@@ -27,7 +27,7 @@ $color-list: #0f0, #00f, orange, #ccc;
   }
   $num: $num + 1;
 }
-// @for example
+// @for example ( for i from 1 through 5 cogería cinco) (con from 1 to 5 coge 4)
 @for $i from 1 to 5 {
   p:nth-of-type(#{$i}) {
     color: #f00;

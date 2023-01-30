@@ -1,4 +1,6 @@
-%btn {
+// al poner el % decimos que no cree el selector btn padre
+
+%btn { // padre
   border-radius: 2px;
   color: #fff;
   padding: 5px 0;
@@ -8,7 +10,7 @@
 }
 
 .btn-error {
-  @extend %btn;
+  @extend %btn; // herencia
   background-color: #f00;
 }
 
