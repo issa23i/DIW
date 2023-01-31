@@ -1,0 +1,51 @@
+/**
+Ejercicio 1
+*/
+
+@mixin transformar($parametro) {
+  -webkit-transform: $parametro;
+  -ms-transform: $parametro;
+  transform: $parametro;
+}
+
+.escalada {
+  @include transformar(scale(2, 3));
+}
+h1 {
+  @include transformar(rotate(22deg));
+}
+/**
+Ejercicio 2
+*/
+@mixin encabezados($tamh1) {
+  @for $i from 1 to 4 {
+    h#{$i} {
+      font-size: #{$tamh1}em;
+    }
+    $tamh1: $tamh1 - 0.2;
+  }
+}
+@include encabezados(1.5);
+@media (min-width: 800px) {
+  @include encabezados(2);
+}
+@media (min-width: 1200px) {
+  @include encabezados(2.5);
+}
+/**
+Ejercicio 3
+*/
+@mixin important_text {
+  color: rgb(146, 91, 91);
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+@mixin specialText($color){
+    @include important_text();
+    background-color: $color;
+}
+.danger{
+    @include specialText(red);
+}
+

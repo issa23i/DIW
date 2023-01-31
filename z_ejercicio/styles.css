@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/**
+Ejercicio 1
+Realiza un fichero SASS donde en base a una variable “textoAumentado” aplique un estilo
+diferente, modificando para ello el tipo de fuente aplicada y el tamaño de letra. Además
+deberá contener una variable “modificaColor” que si está activa deberá modificar también
+el color aplicado al estilo a “rojo” (siendo este también almacenado también en una
+variable).
+*/
+main {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: small;
+  color: palevioletred;
+}
+
+/**
+Ejercicio 2
+Tamaño x 2
+Realiza un fichero SASS que genere haciendo uso del bucle ”for” genere la siguiente
+salida:
+
+.container-1 {
+font-size: 1em;
+}
+.container-2 {
+font-size: 2em;
+}
+.container-3 {
+font-size: 4em;
+}
+*/
+.container-1 {
+  font-size: 1em;
+}
+
+.container-2 {
+  font-size: 2em;
+}
+
+.container-3 {
+  font-size: 3em;
+}
+
+/**
+Ejercicio 3
+Realiza un fichero SASS que genere haciendo uso del bucle ”while” la siguiente salida. Los
+valores
+
+.bloque1 {
+width: 20%;
+}
+.bloque2 {
+width: 50%;
+}
+.bloque3 {
+width: 30%;
+}
+
+Nota: Los valores 20,30 y 50 deberán recuperarse de una lista.
+*/
+.bloque1 {
+  width: 20%;
+}
+
+.bloque2 {
+  width: 30%;
+}
+
+.bloque3 {
+  width: 50%;
+}
+
+/**
+Ejercicio 4
+Realiza un fichero SASS que mediante la directiva @each, recorra una lista múltiple (lista
+formada por listas) como la que sigue a continuación :
+
+(puma,black,default),(sea-slug,blue,pointer)
+
+La salida que debe generar es la siguiente:
+
+.puma-icon {
+background-image: url('/images/puma.png');
+border: 2px solid black;
+cursor: default;
+}
+.sea-slug-icon {
+background-image: url('/images/sea-slug.png');
+border: 2px solid blue;
+cursor: pointer;
+}
+*/
+.puma-icon {
+  background-image: url("/images/puma.png");
+  border: 2px solid black;
+  cursor: default;
+}
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+/**
+Ejercicio 5
+Genera un sitio web que represente a una guía de estilos con la carta de fuentes de un
+sitio web, de manera similar a la mostrada a continuación, pero con tus propios colores y
+fuentes:
+(usar una funcion de usuario)
+• Toda la información relativa a las fuentes (incluyendo los textos con el nombre de
+fuente) debe ser añadida desde Sass.
+• Utiliza al menos 5 colores diferentes y 3 tipos de letras diferentes.
+• Cada título “hx” debe tener un tamaño diferente. (Debes recorrer los títulos con un
+bucle y modificar el valor de x haciendo uso de interpolación)
+• Utiliza todo lo aprendido hasta ahora (funciones, variables, etc.) para optimizar tu
+hoja de estilos.
+*//*# sourceMappingURL=styles.css.map */
