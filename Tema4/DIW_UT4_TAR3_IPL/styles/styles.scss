@@ -1,30 +1,50 @@
 /**
-Ejercicio 1
-Realiza un fichero SASS donde en base a una variable “textoAumentado” aplique un estilo
+1. Realiza un fichero SASS donde en base a una variable “textoAumentado” aplique un estilo
 diferente, modificando para ello el tipo de fuente aplicada y el tamaño de letra. Además
 deberá contener una variable “modificaColor” que si está activa deberá modificar también
 el color aplicado al estilo a “rojo” (siendo este también almacenado también en una
 variable).
-
-$textoAumentado: true;
-$modificaColor: true;
- 
-p {
-    @if $textoAumentado {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: small;
-        @if $modificaColor {
-            color: palevioletred;
-        }
-    }
-}
 */
 
+$modificaColor: false;
+$georgia: Georgia, "Times New Roman", Times, serif;
+$inpact: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+$segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$textoAumentado: (
+  6px: $georgia,
+  18px: $inpact,
+  24px: $segoe,
+);
+
+@function set_rojo($modificaColor) {
+  @if ($modificaColor==true) {
+    $modificaColor: false;
+  } @else {
+    $modificaColor: true;
+  }
+  @return $modificaColor;
+}
+
+@for $i from 1 to 5 {
+  $modificaColor: set_rojo($modificaColor);
+  p:nth-of-type(#{$i}) {
+    @if $modificaColor {
+      color: red;
+    }
+  }
+}
+
+$valor:1;
+@each $s, $f in $textoAumentado {
+    .p#{$valor}{
+        font-family: $f;
+        font-size: $s;
+    }
+    $valor : $valor + 4;
+} 
 
 /**
-Ejercicio 2
-Tamaño x 2
-Realiza un fichero SASS que genere haciendo uso del bucle ”for” genere la siguiente
+2. Realiza un fichero SASS que genere haciendo uso del bucle ”for” genere la siguiente
 salida:
 
 .container-1 {
@@ -37,17 +57,65 @@ font-size: 2em;
 font-size: 4em;
 }
 */
-
+$valor:1;
+@for $i from 1 through 3{
+    
+    .container-#{$i}{
+        font-size: #{$valor}em;
+    }
+    $valor: $valor*2;
+}
 /**
-Ejercicio 3
+3. Realiza un fichero SASS que genere haciendo uso del bucle ”while” la siguiente salida. Los
+valores
+
+.bloque1 {
+width: 20%;
+}
+.bloque2 {
+width: 50%;
+}
+.bloque3 {
+width: 30%;
+}
+
+Nota: Los valores 20,30 y 50 deberán recuperarse de una lista.
 */
 
-/**
-Ejercicio 5
-*/
+$lista: 20,30,50;
+$n:0;
+@while $n < length($lista){
+  $n : $n +1;
+    .bloque#{$n}{
+        width: #{nth($lista,$n)}+ "%";
+    } 
+}
+
 
 /**
-Ejercicio 6
-(usar una funcion de usuario)
+4. Realiza un fichero SASS que mediante la directiva @each, recorra una lista múltiple (lista
+formada por listas) como la que sigue a continuación :
 
+(puma,black,default),(sea-slug,blue,pointer)
+
+La salida que debe generar es la siguiente:
+
+.puma-icon {
+background-image: url('/images/puma.png');
+border: 2px solid black;
+cursor: default;
+}
+.sea-slug-icon {
+background-image: url('/images/sea-slug.png');
+border: 2px solid blue;
+cursor: pointer;
+}
 */
+$lista_multi: (puma,black,default),(sea-slug,blue,pointer);
+@each $list in $lista_multi {
+  .#{nth($list,1)}-icon{
+    background-image: url('/images/#{nth($list,1)}.png');
+    border: 2px, solid, #{nth($list,2)};
+    cursor: #{nth($list,3)};
+  }
+}

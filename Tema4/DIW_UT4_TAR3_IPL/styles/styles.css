@@ -1,29 +1,36 @@
 @charset "UTF-8";
 /**
-Ejercicio 1
-Realiza un fichero SASS donde en base a una variable “textoAumentado” aplique un estilo
+1. Realiza un fichero SASS donde en base a una variable “textoAumentado” aplique un estilo
 diferente, modificando para ello el tipo de fuente aplicada y el tamaño de letra. Además
 deberá contener una variable “modificaColor” que si está activa deberá modificar también
 el color aplicado al estilo a “rojo” (siendo este también almacenado también en una
 variable).
-
-$textoAumentado: true;
-$modificaColor: true;
-
-p {
-    @if $textoAumentado {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: small;
-        @if $modificaColor {
-            color: palevioletred;
-        }
-    }
-}
 */
+p:nth-of-type(1) {
+  color: red;
+}
+
+p:nth-of-type(3) {
+  color: red;
+}
+
+.p1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 6px;
+}
+
+.p5 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+}
+
+.p9 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
 /**
-Ejercicio 2
-Tamaño x 2
-Realiza un fichero SASS que genere haciendo uso del bucle ”for” genere la siguiente
+2. Realiza un fichero SASS que genere haciendo uso del bucle ”for” genere la siguiente
 salida:
 
 .container-1 {
@@ -36,14 +43,73 @@ font-size: 2em;
 font-size: 4em;
 }
 */
-/**
-Ejercicio 3
-*/
-/**
-Ejercicio 5
-*/
-/**
-Ejercicio 6
-(usar una funcion de usuario)
+.container-1 {
+  font-size: 1em;
+}
 
-*//*# sourceMappingURL=styles.css.map */
+.container-2 {
+  font-size: 2em;
+}
+
+.container-3 {
+  font-size: 4em;
+}
+
+/**
+3. Realiza un fichero SASS que genere haciendo uso del bucle ”while” la siguiente salida. Los
+valores
+
+.bloque1 {
+width: 20%;
+}
+.bloque2 {
+width: 50%;
+}
+.bloque3 {
+width: 30%;
+}
+
+Nota: Los valores 20,30 y 50 deberán recuperarse de una lista.
+*/
+.bloque1 {
+  width: 20%;
+}
+
+.bloque2 {
+  width: 30%;
+}
+
+.bloque3 {
+  width: 50%;
+}
+
+/**
+4. Realiza un fichero SASS que mediante la directiva @each, recorra una lista múltiple (lista
+formada por listas) como la que sigue a continuación :
+
+(puma,black,default),(sea-slug,blue,pointer)
+
+La salida que debe generar es la siguiente:
+
+.puma-icon {
+background-image: url('/images/puma.png');
+border: 2px solid black;
+cursor: default;
+}
+.sea-slug-icon {
+background-image: url('/images/sea-slug.png');
+border: 2px solid blue;
+cursor: pointer;
+}
+*/
+.puma-icon {
+  background-image: url("/images/puma.png");
+  border: 2px, solid, black;
+  cursor: default;
+}
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+  border: 2px, solid, blue;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
