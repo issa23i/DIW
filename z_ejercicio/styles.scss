@@ -58,13 +58,13 @@ width: 30%;
 
 Nota: Los valores 20,30 y 50 deberán recuperarse de una lista.
 */
-$list : 20%,30%,50%;
-$num : 1;
+$list: 20%, 30%, 50%;
+$num: 1;
 @while $num < 4 {
-  .bloque#{$num}{
-    width: nth($list,$num)
+  .bloque#{$num} {
+    width: nth($list, $num);
   }
-  $num : $num +1
+  $num: $num + 1;
 }
 
 /**
@@ -87,12 +87,12 @@ border: 2px solid blue;
 cursor: pointer;
 }
 */
-$lista_multiple : (puma,black,default),(sea-slug,blue,pointer);
-@each $lista in $lista_multiple{
-  .#{nth($lista,1)}-icon{
-    background-image: url('/images/#{nth($lista,1)}.png');
-    border: 2px solid #{nth($lista,2)};
-    cursor: #{nth($lista,3)};
+$lista_multiple: (puma, black, default), (sea-slug, blue, pointer);
+@each $lista in $lista_multiple {
+  .#{nth($lista,1)}-icon {
+    background-image: url("/images/#{nth($lista,1)}.png");
+    border: 2px solid #{nth($lista, 2)};
+    cursor: #{nth($lista, 3)};
   }
 }
 
@@ -110,20 +110,47 @@ bucle y modificar el valor de x haciendo uso de interpolación)
 • Utiliza todo lo aprendido hasta ahora (funciones, variables, etc.) para optimizar tu
 hoja de estilos.
 */
-$franklin : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-$gill : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-$cambria : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-$violeta : rgb(60, 9, 123);
-$rosa :  rgb(123, 9, 100);
-$rosa_palo :  rgb(239, 152, 201);
-$amarillo :  rgb(223, 182, 34);
-$azul :  rgb(11, 0, 161);
-$titulos : 6em, 5em, 4em, 3em, 2em, 1em;
+$franklin: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$gill: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+$cambria: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+$violeta: rgb(60, 9, 123);
+$rosa: rgb(123, 9, 100);
+$rosa_palo: rgb(239, 152, 201);
+$amarillo: rgb(223, 182, 34);
+$azul: rgb(11, 0, 161);
+$colores: $cambria, $violeta, $rosa, $rosa_palo, $amarillo;
 
-@function titulos (){
-  
-  @each $tit in $titulos {
+// tamaño titulos
 
+$tamano: 36;
+@for $i from 1 to 7 {
+  h#{$i} {
+    font-size: #{$tamano}px;
   }
+  $tamano: $tamano - 4;
 }
 
+// tipos de letra :
+
+$fuentes: (
+  1: $franklin,
+  2: $gill,
+  3: $cambria,
+);
+
+body {
+  @each $clave, $valor in $fuentes {
+    h3:nth-of-type(#{$clave}) {
+      font-family: $valor;
+    }
+    p:nth-of-type(#{$clave}){
+      color: gray;
+      @for $i from 1 to 6{
+        span:nth-of-type(#{$i}) {
+          color: nth($colores, $i );
+          font-family: $valor;
+        }
+      }
+    }
+  }
+}
