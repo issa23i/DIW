@@ -4,3 +4,15 @@
     color: blue;
   }
 }
+/**
+La directiva @at-root en Sass permite salir del alcance actual
+ de los selectores y generar reglas en la raíz 
+ del archivo CSS resultante. En el ejemplo, 
+ .item será el selector en el archivo CSS resultante 
+ y .item.is-active será el selector generado 
+ por la directiva @at-root. Por lo tanto, cuando un elemento
+  con la clase .item tenga también la clase .is-active, 
+  se aplicará el estilo color: blue; 
+  en lugar del estilo color: black; 
+  que se define en el bloque original de la clase .item.
+*/

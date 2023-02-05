@@ -1,18 +1,6 @@
-@charset "UTF-8";
-body {
-  background-color: #ddd;
-  color: #00f;
-}
+// al poner el % decimos que no cree el selector btn padre
 
-.container {
-  widows: 80%;
-  margin: 0px auto;
-}
-.container .row {
-  padding: 20px;
-}
-
-.btn-ok, .btn-error {
+%btn { // padre
   border-radius: 2px;
   color: #fff;
   padding: 5px 0;
@@ -22,13 +10,14 @@ body {
 }
 
 .btn-error {
+  @extend %btn; // herencia
   background-color: #f00;
 }
 
 .btn-ok {
+  @extend %btn;
   background-color: #0f0;
 }
-
 /**
 Este código es un ejemplo de uso de la directiva @extend 
 en Sass. La directiva @extend permite heredar estilos 
@@ -45,22 +34,3 @@ de %btn. Además, cada selector hijo agrega un estilo
 adicional para el color de fondo, que es rojo para 
 .btn-error y verde para .btn-ok.
 */
-.item {
-  color: black;
-}
-.item.is-active {
-  color: blue;
-}
-
-/**
-La directiva @at-root en Sass permite salir del alcance actual
- de los selectores y generar reglas en la raíz 
- del archivo CSS resultante. En el ejemplo, 
- .item será el selector en el archivo CSS resultante 
- y .item.is-active será el selector generado 
- por la directiva @at-root. Por lo tanto, cuando un elemento
-  con la clase .item tenga también la clase .is-active, 
-  se aplicará el estilo color: blue; 
-  en lugar del estilo color: black; 
-  que se define en el bloque original de la clase .item.
-*//*# sourceMappingURL=main.css.map */
