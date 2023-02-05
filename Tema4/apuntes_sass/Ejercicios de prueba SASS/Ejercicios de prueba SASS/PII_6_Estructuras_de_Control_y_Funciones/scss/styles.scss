@@ -9,6 +9,7 @@ header {
   } @else if $dark-theme {
     background-color: #000;
     color: #fff;
+    
   } @else {
     //Default theme
     background-color: #aaa;

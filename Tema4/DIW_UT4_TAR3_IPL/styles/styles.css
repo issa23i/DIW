@@ -6,13 +6,20 @@ diferente, modificando para ello el tipo de fuente aplicada y el tamaño de letr
 deberá contener una variable “modificaColor” que si está activa deberá modificar también
 el color aplicado al estilo a “rojo” (siendo este también almacenado también en una
 variable).
-*/
-p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: small;
-  color: palevioletred;
-}
 
+$textoAumentado: true;
+$modificaColor: true;
+
+p {
+    @if $textoAumentado {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: small;
+        @if $modificaColor {
+            color: palevioletred;
+        }
+    }
+}
+*/
 /**
 Ejercicio 2
 Tamaño x 2
@@ -29,12 +36,6 @@ font-size: 2em;
 font-size: 4em;
 }
 */
-p {
-  font-size: "1em";
-  font-size: "2em";
-  font-size: "3em";
-}
-
 /**
 Ejercicio 3
 */
@@ -45,4 +46,4 @@ Ejercicio 5
 Ejercicio 6
 (usar una funcion de usuario)
 
-*//*# sourceMappingURL=vacio.css.map */
+*//*# sourceMappingURL=styles.css.map */
