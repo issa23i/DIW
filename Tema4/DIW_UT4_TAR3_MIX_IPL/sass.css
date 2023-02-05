@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/**
+1. Crear un mixin denominado transformar($propiedad){} que aplique la propiedad
+indicada como parámetro a los atributos:
+-webkit-transform:
+-ms-transform:
+transform:
+
+Realiza la de salida de compilación del fichero sería el siguiente “css” resultante:
+.escalada {
+-webkit-transform: scale(2, 3);
+-ms-transform: scale(2, 3);
+transform: scale(2, 3); }
+h1 {
+color: blue;
+-webkit-transform: rotate(22deg);
+-ms-transform: rotate(22deg;
+transform: rotate(22deg); }
+*/
+.escalada {
+  transform: scale(2, 3);
+}
+
+h1 {
+  transform: rotate(22deg);
+}
+
+/**
+2. Crear un mixin denominado encabezados($tamh1){} que en base a aun tamaño inicial
+de h1 vaya disminuyendo en (0.2em) el tamaño de los títulos h2 y h3.
+Posteriormente deberás realizar la llamada al mixin para que aplique de forma diferente
+según el tamaño de la pantalla. Para ello deberás realizar las @mediaquuery necesarias
+para obtener la siguiente salida:
+h1 {
+font-size: 1.5em; }
+h2 {
+font-size: 1.3em; }
+h3 {
+font-size: 1.1em; }
+@media (min-width: 800px) {
+h1 {
+font-size: 2em; }
+h2 {
+font-size: 1.8em; }
+h3 {
+font-size: 1.6em; } }
+@media (min-width: 1200px) {
+h1 {
+font-size: 2.5em; }
+h2 {
+font-size: 2.3em; }
+h3 {
+font-size: 2.1em; }
+}
+*/
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2.3em;
+  }
+  h3 {
+    font-size: 2.1em;
+  }
+}
+/**
+3. Crear un mixin denominado mixin important-text{} que contenga las siguientes
+propiedades:
+
+color: red;
+font-size: 25px;
+font-weight: bold;
+border: 1px solid blue;
+Posteriormente crear un mixin specialText($color){} que haga una llamada al mixin
+anterior y además de lo anterior debe modificar el parámetro background-color al que se le
+pasa como parámetro.
+Un ejemplo de hoja de estilo resultante de crear un estilo para la clase “.danger” llamando
+al mixin “specialText(green)” debería dar como resultado:
+.danger {
+color: red;
+font-size: 25px;
+font-weight: bold;
+border: 1px solid blue;
+background-color: green;
+}
+*/
+.danger {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  color: red;
+}/*# sourceMappingURL=sass.css.map */
