@@ -60,8 +60,9 @@ $mapa: (
 
 //User defined function example
 @function anchura-col($cols, $total) {
-  @return percentage($cols/$total);
+  @return percentage(calc($cols / $total));
 }
+
 
 .sidebar {
   background-color: #00f;
