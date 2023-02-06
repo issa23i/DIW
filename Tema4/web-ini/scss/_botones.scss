@@ -1,0 +1,14 @@
+//Elemento botón general
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.btn:hover {
+  box-shadow: 0.5rem 0.5rem #888;
+}
+.btn:active {
+  color: white;
+}
