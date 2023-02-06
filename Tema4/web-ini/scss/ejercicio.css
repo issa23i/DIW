@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@import "../vendors/normalize.css";
+@import "../vendors/font-awesome.min.css";
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.btn:hover {
+  box-shadow: 0.5rem 0.5rem #888;
+}
+
+.btn:active {
+  color: white;
+}
+
+.btn-color-normal {
+  background-image: linear-gradient(to bottom, black 70%, rgb(0, 110, 255) 100%);
+}
+
+.btn-color-warning {
+  background-image: linear-gradient(to bottom, black 70%, rgb(239, 241, 120) 100%);
+}
+
+.btn-color-accepted {
+  background-image: linear-gradient(to bottom, black 70%, rgb(55, 138, 0) 100%);
+}
+
+.btn-color-error {
+  background-image: linear-gradient(to bottom, black 70%, #ff0000 100%);
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.btn:hover {
+  box-shadow: 0.5rem 0.5rem #888;
+}
+.btn:active {
+  color: white;
+}
+
+/*Estilos para el contenedor general de mi página*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+figure.card {
+  border: 0.1rem solid #333333;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1rem;
+}
+figure.card img {
+  border-radius: 2rem;
+  width: 100%;
+}
+figure.card figcaption {
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+figure.card:hover {
+  transition: linear "6s";
+  transform: rotate(720) deg;
+}
+
+/*Estilos para el contenedor general de mi página*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row { /* OLD - iOS 6-, Safari 3.1-6, BB7 */ /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: row;
+}
+
+.row > .col-1 {
+  width: 12.5%;
+}
+
+.row > .col-2 {
+  width: 25%;
+}
+
+.row > .col-3 {
+  width: 37.5%;
+}
+
+.row > .col-4 {
+  width: 50%;
+}
+
+.row > .col-5 {
+  width: 62.5%;
+}
+
+.row > .col-6 {
+  width: 75%;
+}
+
+.row > .col-7 {
+  width: 87.5%;
+}
+
+.row > .col-8 {
+  width: 100%;
+}
+
+/*Usando anidamiento crear la hoja de estilos para un menú 
+nav {
+    background-color: #9b6f91;
+    padding: 0.2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+nav ul li.active {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+nav ul li:hover {
+    color: #FFFFFF;
+}
+
+nav ul li a {
+    text-decoration: none;
+}*/
+nav {
+  background-color: #9b6f91;
+  padding: 0.2rem;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav ul li:hover {
+  color: #FFFFFF;
+}
+nav ul li .active {
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.5;
+}
+
+.p-2 {
+  padding: 1;
+}
+
+.p-3 {
+  padding: 1.5;
+}
+
+.p-4 {
+  padding: 2;
+}
+
+.text-center {
+  text-align: center;
+}/*# sourceMappingURL=ejercicio.css.map */

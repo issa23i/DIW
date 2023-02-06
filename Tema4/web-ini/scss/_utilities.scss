@@ -1,4 +1,12 @@
 
+$valor-utilities:0;
+@for $i from 1 to 6 {
+    $i : $i - 1;
+    .p-#{$i}{
+        padding: $valor-utilities;
+    }
+    $valor-utilities: $valor-utilities + 0.5;
+}
 .text-center {
     text-align: center;
 }

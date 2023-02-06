@@ -1,8 +1,16 @@
-
+@import "colores";
 /// Función que devuelve la anchura correspondiente al elemento de la maquetación
 /// @parameter {integer} $i - Número de casillas en el alcho de la fila que va a ocupar
 /// @return {integer} - El porcentaje (sin el símbolo %, del ancho que le corresponde al elemento
 /// @group layout
 @function anchura_col($i) {
-    @return (100 / $num_elementos)*$i ;
+    @return calc(100 / $num_elementos)*$i ;
   }
+
+@function columna-color($numero-columna){
+  @if( calc($numero-columna / 2) == 0 ){
+    @return $color-tabla-claro;
+  } @else {
+    @return $color-tabla-oscuro;
+  }
+}

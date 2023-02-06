@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.css","_colors.scss","_layout.scss","_botones.scss","_atroot.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACGhB;EACE,sBAHiB;EAIjB,WALW;ADIb;;AEDA;EACE,WAAA;EACA,gBAAA;AFIF;AEFE;EACE,aAPU;AFWd;;AGVA;EACE,kBAAA;EACA,WAAA;EACA,cAAA;EACA,gBAAA;EACA,gBAAA;EACA,YAAA;AHaF;;AGVA;EAEE,sBAAA;AHYF;;AGTA;EAEE,sBAAA;AHWF;;AGTA;;;;;;;;;;;;;;;CAAA;ACpBA;EACE,YAAA;AJgDF;AI/CW;EACP,WAAA;AJiDJ;;AI9CA;;;;;;;;;;;CAAA","file":"main.css"}
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AACA;;;;;CAAA","file":"main.css"}

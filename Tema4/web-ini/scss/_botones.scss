@@ -1,3 +1,6 @@
+@import "colores";
+@import "mixins";
+
 //Elemento botón general
 .btn {
   display: inline-block;
@@ -11,4 +14,35 @@
 }
 .btn:active {
   color: white;
+}
+
+
+// mapa
+$mapa-colores: (
+  color-normal : $color-normal,
+  color-warning : $color-warning,
+  color-accepted : $color-accepted,
+  color-error : $color-error,
+);
+
+// bucle
+@each $clave, $valor in $mapa-colores{
+  .btn-#{$clave} {
+    @include gradient-x(black, $valor)
+  } 
+}
+
+// anidamientos
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  &:hover{
+    box-shadow: 0.5rem 0.5rem #888;
+  }
+  &:active{
+    color: white;
+  }
 }
