@@ -18,19 +18,19 @@
 }
 
 .btn-normal {
-  background-image: linear-gradient(to bottom, #333333 70%, rgb(0, 110, 255) 100%);
+  background-image: linear-gradient(to bottom, rgb(0, 110, 255) 70%, #333333 100%);
 }
 
 .btn-warning {
-  background-image: linear-gradient(to bottom, #333333 70%, rgb(239, 241, 120) 100%);
+  background-image: linear-gradient(to bottom, rgb(239, 241, 120) 70%, #333333 100%);
 }
 
 .btn-accepted {
-  background-image: linear-gradient(to bottom, #333333 70%, rgb(55, 138, 0) 100%);
+  background-image: linear-gradient(to bottom, rgb(55, 138, 0) 70%, #333333 100%);
 }
 
 .btn-error {
-  background-image: linear-gradient(to bottom, #333333 70%, #ff0000 100%);
+  background-image: linear-gradient(to bottom, #ff0000 70%, #333333 100%);
 }
 
 .btn {

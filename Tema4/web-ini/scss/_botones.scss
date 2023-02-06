@@ -28,7 +28,7 @@ $mapa-colores: (
 // bucle
 @each $clave, $valor in $mapa-colores{
   .btn-#{$clave} {
-    @include gradient-x($color-base, $valor)
+    @include gradient-x($valor, $color-base)
   } 
 }
 
