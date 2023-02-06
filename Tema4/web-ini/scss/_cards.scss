@@ -2,7 +2,7 @@
 @import "dimensiones";
 @import "colores";
 $nvueltas: 2;
-$nsegundos: "6s";
+$nsegundos: 6s;
 figure.card {
     border: $border-width #{$border-style} $border-color;
     border-radius: $border-radius;
@@ -12,7 +12,10 @@ figure.card {
      img {
         border-radius: $boder-radius-big; 
         width: 100%;
-
+        &:hover{
+           @include duracion($nsegundos);
+           @include girar($nvueltas);
+        }
         
      }
 
@@ -22,9 +25,5 @@ figure.card {
          text-align: center;
      }
      
-     &:hover{
-        @include duracion($nsegundos);
-        @include girar($nvueltas);
-     }
 
 }

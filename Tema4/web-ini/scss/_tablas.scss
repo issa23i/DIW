@@ -1,15 +1,22 @@
 @import "funciones";
+
+/**
+En _tablas.scss crea un bucle para desde 1 a 10 para asignar un color de fondo
+con la función anteriormente creada.
+*/
+
 //Estilos genreales para la tabla
 table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
+  border-collapse: collapse;
+  width: 100%;
   th,
-  
   td {
     border: 1px solid black;
     padding: 1rem;
   }
-
-
+  @for $i from 1 through 10 {
+    td:nth-of-type(#{$i}) {
+      background-color: columna-color($i);
+    }
+  }
+}

@@ -22,6 +22,6 @@
   transition:linear $nsegundos;
 }
 @mixin girar($nvueltas){
-  transform: rotate((360* $nvueltas))deg;
+  transform: rotate(#{360* $nvueltas}deg);
 }
 

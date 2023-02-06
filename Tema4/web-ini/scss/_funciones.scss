@@ -8,7 +8,7 @@
   }
 
 @function columna-color($numero-columna){
-  @if( calc($numero-columna / 2) == 0 ){
+  @if( $numero-columna%2 == 0 ){
     @return $color-tabla-claro;
   } @else {
     @return $color-tabla-oscuro;

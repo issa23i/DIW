@@ -19,16 +19,16 @@
 
 // mapa
 $mapa-colores: (
-  color-normal : $color-normal,
-  color-warning : $color-warning,
-  color-accepted : $color-accepted,
-  color-error : $color-error,
+  normal : $color-normal,
+  warning : $color-warning,
+  accepted : $color-accepted,
+  error : $color-error,
 );
 
 // bucle
 @each $clave, $valor in $mapa-colores{
   .btn-#{$clave} {
-    @include gradient-x(black, $valor)
+    @include gradient-x($color-base, $valor)
   } 
 }
 
