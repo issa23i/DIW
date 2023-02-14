@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    
+    <!--<link rel="stylesheet" href="css/custom.css" />-->
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control nav-form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-light container mt-n5">
+        <h1 class="text-center py-5 display-6">Contacto</h1>
+        <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit ex omnis, itaque minus dicta excepturi dolorum libero aliquid. Et, aliquid. Totam, incidunt esse ducimus vitae libero aliquam sequi earum.</p>
+
+        <div class="py-5">
+
+            <form class="row g-3 needs-validation" novalidate>
+
+                <div class="col-md-4">
+                    <label for="text-1" class="form-label">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="text-1" 
+                        class="form-control" 
+                        value="Mark"
+                        required
+                    >
+                    <div class="valid-feedback">
+                        Perfecto todo correcto!
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="text-2" class="form-label">Last name</label>
+                    <input 
+                        type="text" 
+                        id="text-2" 
+                        class="form-control"
+                        value="Otto"
+                        required
+                    >
+                    <div class="valid-feedback">
+                        Looks Good!
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="text-3" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="iconoUserName">@</span>
+                        <input 
+                            type="text"
+                            required
+                            class="form-control"
+                            id="text-3"
+                            aria-describedby="iconoUserName"
+                        >
+                        <div class="invalid-feedback">
+                            Coloque su nombre
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="text-4" class="form-label">City</label>
+                    <input 
+                        type="text" 
+                        id="text-4" 
+                        class="form-control"
+                        required
+                    >
+                    <div class="valid-feedback">
+                      PErfecto!
+                  </div>
+                    <div class="invalid-feedback">
+                        Coloque su ciudad
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="text-5" class="form-label">State</label>
+                    <select id="text-5" class="form-select" required>
+                        <option value="" selected disabled>Choose...</option>
+                        <option value="">...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Coloque su State
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="text-6" class="form-label">Zip</label>
+                    <input 
+                        type="text" 
+                        id="text-6" 
+                        class="form-control"
+                        required
+                    >
+                    <div class="invalid-feedback">
+                        Coloque su Zip
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input 
+                            type="checkbox" 
+                            class="form-check-input"
+                            value=""
+                            id="text-7"
+                            required
+                        >
+                        <label for="text-7" class="form-check-label">Acepte las condiciones</label>
+                        <div class="invalid-feedback">
+                            Acepte las condiciones
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Procesar...
+                    </button>
+                </div>
+
+            </form>
+            
+        </div>
+    </main>
+
+    <footer class="text-center my-5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, illo.</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/formulario.js"></script>
+  </body>
+</html>
