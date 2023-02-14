@@ -11723,4 +11723,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+p {
+  background-color: pink;
 }/*# sourceMappingURL=custom.css.map */
