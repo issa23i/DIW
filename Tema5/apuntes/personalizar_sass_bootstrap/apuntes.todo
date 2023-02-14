@@ -1,0 +1,11 @@
+Instalar Node y Live Sass Compiler (VS Code)
+Iniciar un proyecto con node (npm init -y) e Instalar bootstrap: npm install bootstrap
+Instalación NPM
+npm init -y
+npm install bootstrap (ver instalar bootstrap via npm)
+CSS
+Creamos una carpeta con un archivo llamada sass/custom.scss e importamos el siguiente fichero:
+@import "../node_modules/bootstrap/scss/bootstrap"
+Compilamos el .scss y generamos un css/custom.css. Puedes usar el Live Sass Compiler, si no
+funciona, revisa la Revisa en File->Preferencias->Settings->Extensions->LiveSass->settings.json
+
