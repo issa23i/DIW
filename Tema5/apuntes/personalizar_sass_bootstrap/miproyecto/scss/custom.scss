@@ -1,1 +1,7 @@
+// primeo lo que queresmos cambiar y luego el import de bootstrap
+
+// Sobrescritura del valor por defecto de las variables
+$body-bg: #000;
+$body-color: #111;
+
 @import "../bootstrap/scss/bootstrap.scss";
