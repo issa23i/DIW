@@ -1,7 +1,9 @@
 // primeo lo que queresmos cambiar y luego el import de bootstrap
 
 // Sobrescritura del valor por defecto de las variables
-$body-bg: #000;
-$body-color: #111;
+$body-bg: rgb(226, 142, 249);
+$body-color: rgb(41, 1, 52);
+$accordion-border-width:                  16px;
+$accordion-border-color:                  rgba(rgb(148, 248, 61), .125);
 
 @import "../bootstrap/scss/bootstrap.scss";
