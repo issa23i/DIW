@@ -1,4 +1,8 @@
 // Aquí variables
+$primary: #3CB4AB;
+$theme-colors: (
+  "primary": $primary
+);
 
 @import "../bootstrap/scss/bootstrap.scss";
 
