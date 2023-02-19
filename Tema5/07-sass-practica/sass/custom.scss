@@ -1,0 +1,18 @@
+
+$primary : #3CB4AB;
+
+@import '../bootstrap-5.3.0-alpha1/scss/bootstrap.scss';
+
+header {
+    background-image: url(../img/header.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.mt-n5 {
+    margin-top: -3rem;
+}
+.nav-form-control {
+    background-color: $primary;
+    border-color: #f8f9fa;
+}

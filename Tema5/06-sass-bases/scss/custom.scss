@@ -1,0 +1,20 @@
+// primeo lo que queresmos cambiar (variables) y luego el import de bootstrap
+
+// Sobrescritura del valor por defecto de las variables
+$danger:#CD853F;
+$p-text-color: #ab296a;
+@import '../sass/bootstrap-5.3.0-alpha1/scss/bootstrap.scss';
+
+// los estilos a los elementos van después porque tiene preferencia
+
+
+body{
+    font-family: "Dancing Script", cursive;
+    .h1{
+        background-color: #555;
+        color: $p-text-color;
+    }
+    p{
+        color: $p-text-color;
+    }
+}
