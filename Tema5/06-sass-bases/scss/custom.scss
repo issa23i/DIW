@@ -1,7 +1,9 @@
 // primeo lo que queresmos cambiar (variables) y luego el import de bootstrap
 
 // Sobrescritura del valor por defecto de las variables
-$danger:#CD853F;
+
+$yellow : rgb(176, 176, 84);
+$danger:$yellow;
 $p-text-color: #ab296a;
 @import '../sass/bootstrap-5.3.0-alpha1/scss/bootstrap.scss';
 
