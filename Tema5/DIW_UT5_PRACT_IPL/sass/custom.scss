@@ -19,3 +19,11 @@ main{
     background-repeat: no-repeat;
     min-height: 400px;
 }
+@media print {
+    body{
+        filter: grayscale(100%);
+    }
+}
+label{
+    color: $light;
+}

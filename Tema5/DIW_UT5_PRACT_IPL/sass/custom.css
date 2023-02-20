@@ -11739,4 +11739,13 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 400px;
+}
+
+@media print {
+  body {
+    filter: grayscale(100%);
+  }
+}
+label {
+  color: #f8f9fa;
 }/*# sourceMappingURL=custom.css.map */

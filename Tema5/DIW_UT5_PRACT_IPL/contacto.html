@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/db02aaff56.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="sass/custom.css" />
+  </head>
+  <body>
+    <!-- Botón ir arriba -->
+    <a
+      href="#header"
+      class="btn btn-secondary text-light position-fixed z-3 end-0 bottom-0 mb-3 me-3"
+      id="btn-top"
+      role="button"
+      aria-label="Ir a inicio"
+    >
+      <i class="fas fa-arrow-up"></i>
+      Ir a inicio</a
+    >
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header id="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a href="#main" class="navbar-brand text-light">
+              <i class="fa-sharp fa-solid fa-sailboat"></i> Veleritos</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-auto" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="index.html#main" class="nav-link active text-light">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#compras" class="nav-link text-light">Compra</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#carrousel" class="nav-link text-light">Imágenes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#aboutus" class="nav-link text-light"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contacto.html" class="nav-link text-light"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="main" class="min-vh-100 pt-5">
+        <form class="row g-3 needs-validation m-5" novalidate>
+          <div class="col-12 col-md-4">
+            <label for="validationCustom01" class="form-label"
+              >First name</label
+            >
+            <input
+              type="text" pattern="[a-zA-Z]+"
+              class="form-control"
+              id="validationCustom01"
+              value="Isabel"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input
+              type="text" pattern="[a-zA-Z]+"
+              class="form-control"
+              id="validationCustom02"
+              value="Pastor"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <label for="validationCustomUsername" class="form-label"
+              >Email</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="email"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                placeholder="Email"
+                required
+              />
+              <div class="invalid-feedback">Please choose a username.</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
+            <div class="invalid-feedback">Please provide a valid city.</div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <label for="validationCustom04" class="form-label">Provincia</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option value="sevilla">Sevilla</option>
+              <option value="valencia">Valencia</option>
+              <option value="madrid">Madrid</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid state.</div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom05"
+              required
+            />
+            <div class="invalid-feedback">Please provide a valid zip.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-secondary text-light" type="submit">Submit form</button>
+          </div>
+        </form>
+      </main>
+      <footer class="mt-auto text-white-50 bg-primary text-center p-3">
+        <p>
+          Veleritos
+          <a href="https://isabelpastorlopez.com" class="text-white"
+            >Isabel Pastor López</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db02aaff56.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
