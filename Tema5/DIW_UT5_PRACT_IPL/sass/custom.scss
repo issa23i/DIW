@@ -1,5 +1,11 @@
 // variables de bootstrap
+$primary: #125E97;
+$secondary: #5985ae;
+
 
 @import '../bootstrap-5.3.0-alpha1/scss/bootstrap.scss';
 
 // estilos personalizados
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
