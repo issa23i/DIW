@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
     <link
       rel="stylesheet"
       href="https://kit.fontawesome.com/db02aaff56.css"
@@ -70,10 +72,10 @@
         </nav>
       </header>
       <main id="main" class="min-vh-100 pt-5">
-        <form class="row g-3 needs-validation m-5" novalidate>
+        <form action="https://formsubmit.co/ipaslop262@iesmartinezm.es" class="row g-3 needs-validation m-5" novalidate>
           <div class="col-12 col-md-4">
             <label for="validationCustom01" class="form-label"
-              >First name</label
+              >Nombre</label
             >
             <input
               type="text" pattern="[a-zA-Z]+"
@@ -82,10 +84,10 @@
               value="Isabel"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div class="valid-feedback">Validado!</div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <label for="validationCustom02" class="form-label">Last name</label>
+            <label for="validationCustom02" class="form-label">Apellido</label>
             <input
               type="text" pattern="[a-zA-Z]+"
               class="form-control"
@@ -93,7 +95,7 @@
               value="Pastor"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div class="valid-feedback">Validado!</div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
             <label for="validationCustomUsername" class="form-label"
@@ -109,38 +111,39 @@
                 placeholder="Email"
                 required
               />
-              <div class="invalid-feedback">Please choose a username.</div>
+              <div class="invalid-feedback">Introduce tu email</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <label for="validationCustom03" class="form-label">City</label>
+            <label for="validationCustom03" class="form-label">Ciudad</label>
             <input
               type="text"
               class="form-control"
               id="validationCustom03"
               required
             />
-            <div class="invalid-feedback">Please provide a valid city.</div>
+            <div class="invalid-feedback">Introduzca una ciudad válida</div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
             <label for="validationCustom04" class="form-label">Provincia</label>
             <select class="form-select" id="validationCustom04" required>
-              <option selected disabled value="">Choose...</option>
+              <option selected disabled value="">Elegir...</option>
               <option value="sevilla">Sevilla</option>
               <option value="valencia">Valencia</option>
               <option value="madrid">Madrid</option>
             </select>
-            <div class="invalid-feedback">Please select a valid state.</div>
+            <div class="invalid-feedback">Introduzca una provincia válida</div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <label for="validationCustom05" class="form-label">Zip</label>
+            <label for="validationCustom05" class="form-label">Código Postal</label>
             <input
               type="text"
               class="form-control"
               id="validationCustom05"
+              pattern="[0-9]{5}"
               required
             />
-            <div class="invalid-feedback">Please provide a valid zip.</div>
+            <div class="invalid-feedback">Introduzca un código postal válido</div>
           </div>
           <div class="col-12">
             <div class="form-check">
@@ -152,15 +155,15 @@
                 required
               />
               <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
+                Acepto términos y condiciones
               </label>
               <div class="invalid-feedback">
-                You must agree before submitting.
+                Debes aceptar los términos y condiciones.
               </div>
             </div>
           </div>
           <div class="col-12">
-            <button class="btn btn-secondary text-light" type="submit">Submit form</button>
+            <button class="btn btn-secondary text-light" type="submit">Enviar</button>
           </div>
         </form>
       </main>
