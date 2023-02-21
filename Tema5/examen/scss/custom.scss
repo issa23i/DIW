@@ -1,5 +1,12 @@
 // variables
-
+@font-face {
+    font-family: 'OpenSansCondensed';
+    src: url('../assets/fonts/open-sans-condensed/OpenSans-CondBold.ttf');
+}
+$font-family-base: 'OpenSansCondensed';
 @import '../bootstrap-5.3.0-alpha1/scss/bootstrap.scss';
 
 // estilos
+body{
+    font-family: $font-family-base;
+}

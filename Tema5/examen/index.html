@@ -1,43 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="scss/custom.css" />
+  </head>
+  <body>
+    <!-- Botón ir arriba -->
+    <a
+      href="#header"
+      class="btn btn-secondary text-light position-fixed z-3 end-0 bottom-0 mb-3 me-3"
+      id="btn-top"
+      role="button"
+      aria-label="Ir a inicio"
+    >
+      <i class="fas fa-arrow-up"></i>
+      Ir a inicio</a
+    >
 
-</head>
-<header>
-    <nav class="navbar navbar-primary bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-      </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header id="header" class="fixed-top bg-light">
+        <nav class="navbar navbar-light bg-primary text-center">
+          <button type="button" class="btn btn-primary m-auto">
+            Contáctanos(+34)987654123
+          </button>
+        </nav>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a href="#header" class="navbar-brand text-primary">
+              <i class="fa-sharp fa-solid fa-sailboat"></i> Diseño IESMM</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-auto" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a href="#equipo" class="nav-link active text-secondary"
+                    >Equipo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#formulario" class="nav-link text-secondary"
+                    >Contactos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#formulario" class="nav-link text-secondary"
+                    >Suscríbete</a
+                  >
+                </li>
+                
+              </ul>
+              <form class="form-inline d-inline-flex my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="email"
+                  placeholder="Correo Electrónico"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-primary  my-2 my-sm-0"
+                  type="submit"
+                >
+                  Suscribete
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section id="carrousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/assets/img/slide1.jpg"
+                class="d-block w-100"
+                alt="Imagen1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/assets/img/slide2.jpg"
+                class="d-block w-100"
+                alt="Imagen2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/assets/img/slide3.jpg"
+                class="d-block w-100"
+                alt="Imagen3"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </nav>
-</header>
-<body>
+      </section>
+
+      <section class="jumbotron text-center">
+        <div class="container w-50 m-auto border-top mt-4 pt-1 mb-2">
+          <h4 class="jumbotron-heading">
+            Una empresa única para todas tus necesidades de
+            <span class="text-primary">Marketing Digital</span>
+          </h4>
+          <p class="lead text-muted">
+            <span class="text-primary">Diseño IESMM</span> es la agencia donde te ayudamos establecer
+            tu presencia online. SEO, paginas WEB, tiendas virtuales, redes
+            sociales
+          </p>
+        </div>
+      </section>
+      <section id="tarjetas" class="pt-4">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div
+              class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+            >
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  class="bd-placeholder-img"
+                  height="200"
+                  src="assets/assets/img/desarrollo.png"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                >
+                  
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  
+                </img>
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <h6 class="mb-0">Desarrollo</h6>
+                <p class="card-text mb-auto">
+                  Desarrollo de aplicaciones WEB, moviles y ecommerce
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters overflow-hidden flex-md-row mb-4  h-md-250 position-relative"
+            >
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  class="bd-placeholder-img"
+                  height="200"
+                  src="assets/assets/img/concepto.png"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                >
+                  
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  
+                </img>
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <h6 class="mb-0">Branding</h6>
+                <p class="card-text mb-auto">
+                  Diseño, Conceptualización e Implementación de productos digitales
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters  overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+            >
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  class="bd-placeholder-img"
+                  height="200"
+                  src="assets/assets/img/comunicaciones.png"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                >
+                  
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  
+                </img>
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <h6 class="mb-0">Comunicaciones</h6>
+                <p class="card-text mb-auto">
+                  Desarrollo  del plan de comunicaciones para sus clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+            >
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  class="bd-placeholder-img"
+                  height="200"
+                  src="assets/assets/img/seo.png"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                >
+                  
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  
+                </img>
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <h6 class="mb-0">SEO</h6>
+                <p class="card-text mb-auto">
+                  Analizamos la eficiencia y optimizamos los sitios WEB
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="jumbotron text-center pt-4">
+        <div class="container w-50 m-auto mt-4 pt-1 mb-2">
+          <h4 class="jumbotron-heading">
+            Equipo pequeño con 
+            <span class="text-primary">resultados Grandes</span>
+          </h4>
+          <p id="equipo" class="lead text-muted">
+            Siempre buscamos las personas adecuadas para que trabajen con nosotros. Si te sientes listo para este reto, te esperamos para que te unas a nosotros.
+          </p>
+          <img class="w-100 m-auto" src="assets/assets/img/equipo.jpg" alt="Equipo">
+        </div>
+      </section>
+      <section id="map" class="pt-4">
+        <div class="row mb-2">
+          <div class="col-md-8 m-auto">
+            <div
+              class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+            >
+              
+              <div class="col col-md-4 p-4 d-flex flex-column position-static">
+                <h2 class="mb-0">Ubicado en Sevilla, Mi arma
+                </h2>
+                <h2 id="typewriter" class="text-primary">Viva el diseño</h2>
+                <p class="card-text mb-auto">
+                  Elijimos Sevilla para nuestra oficina con el objetivo de estar cerca de nuestros clientes. ¡Visítenos y no se arrepentirá!
+                </p>
+              </div>
+              <div class="col-auto col-md-4 d-none d-lg-block">
+                <img
+                  class="bd-placeholder-img"
+                  src="assets/assets/img/mapa.PNG"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                >
+                  
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  
+                </img>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="formulario" class="pt-4">
+        <div class="card m-auto" style="width: 18rem;">
+          <img src="assets/assets/img/support.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Contáctanos</h5>
+            <p class="card-text">Estamos aqui para hacer realidad de tus proyectos            </p>
+            <form>
+              <div class="form-group m-1">
+                <input type="text" class="form-control" id="exampleInputText" placeholder="Javier Ferrer">
+              </div>
+              <div class="form-group m-1">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="javier@ejemplo.com">
+
+              </div>
+              
+              <div class="form-group m-1">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 m-1">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="mt-auto text-dark text-center p-3">
+        <p>
+          Diseño IESMM.Todos Los Derechos Reservados 2021
+          <a href="https://twitter.com" class="text-primary"
+            >Twitter</a
+          >
+        </p>
+      </footer>
+    </div>
     <script src="js/bootstrap.min.js"></script>
-</body>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      let app = document.getElementById('typewriter');
+let typewriter = new Typewriter(app, {
+loop: true,
+delay: 75,
+});
+typewriter
+.pauseFor(2500)
+.typeString('Viva el diseño web')
+.pauseFor(200)
+.deleteChars(10)
+.start();
+    </script>
+  </body>
 </html>
